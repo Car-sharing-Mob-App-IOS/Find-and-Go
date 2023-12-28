@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "phonenumber_field",
     "users.apps.UsersConfig",
     "cars.apps.CarsConfig",
+    "reviews.apps.ReviewsConfig",
     "api",
     "drf_spectacular",
     "django_filters",
