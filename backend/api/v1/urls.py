@@ -2,6 +2,7 @@ from cars.views import CarViewSet
 from django.urls import include, path
 from drf_spectacular.views import SpectacularSwaggerView
 from rest_framework import routers
+from reviews.views import ReviewDetailView, ReviewListCreateView
 from users.views import PublicUserViewSet
 
 from .router_settings import CustomDjoserUserRouter
@@ -24,4 +25,14 @@ urlpatterns = [
     path("auth/", include("djoser.urls.authtoken")),
     path("swagger/", SpectacularSwaggerView.as_view(), name="swagger"),
     path('auth/', include('djoser.social.urls')),
+    path("reviews/", ReviewListCreateView.as_view(
+        {
+            'get': 'list', 'post': 'create'
+            }
+            ), name="review-list-create"),
+    path("reviews/<int:pk>/", ReviewDetailView.as_view(
+        {
+            'get': 'retrieve'
+            }
+            ), name="review-detail")
 ]
