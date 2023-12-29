@@ -1,29 +1,41 @@
 from django_filters.rest_framework import DjangoFilterBackend
+
 from drf_spectacular.utils import extend_schema, extend_schema_view
+
 from rest_framework import status
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
 from .models import Review
 from .serializers import ReviewSerializer
+from .permissions import IsReviewAuthorOrReadOnly
 
 
 @extend_schema(tags=["Отзывы"])
 @extend_schema_view(
     list=extend_schema(summary="Список отзывов"),
     create=extend_schema(summary="Создание отзыва"),
+    retrieve=extend_schema(summary="Получение одного отзыва"),
+    update=extend_schema(summary="Обновление отзыва"),
+    partial_update=extend_schema(summary="Частичное обновление отзыва"),
+    destroy=extend_schema(summary="Удаление отзыва"),
 )
-class ReviewListCreateView(ModelViewSet):
+class ReviewView(ModelViewSet):
     """Представление для работы с отзывами пользователей."""
+
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
     pagination_class = PageNumberPagination
-    permission_classes = [AllowAny]
-    filter_backends = [
-        DjangoFilterBackend,
-    ]
+    permission_classes = [IsAuthenticatedOrReadOnly]
+    filter_backends = [DjangoFilterBackend]
+
+    def get_permissions(self):
+        if self.action == "retrieve":
+            return [IsReviewAuthorOrReadOnly()]
+
+        return super().get_permissions()
 
     def list(self, request, *args, **kwargs):
         queryset = self.get_queryset()
@@ -42,21 +54,8 @@ class ReviewListCreateView(ModelViewSet):
             headers=headers,
         )
 
-
-@extend_schema(tags=["Отзывы"])
-@extend_schema_view(
-    retrieve=extend_schema(summary="Получение одного отзыва"),
-)
-class ReviewDetailView(ModelViewSet):
-    """Представление для получения конкретного отзыва пользователя."""
-    queryset = Review.objects.all()
-    serializer_class = ReviewSerializer
-    permission_classes = [AllowAny]
-    filter_backends = [
-        DjangoFilterBackend,
-    ]
-
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
         serializer = self.get_serializer(instance)
+
         return Response(serializer.data)
