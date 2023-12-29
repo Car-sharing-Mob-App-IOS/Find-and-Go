@@ -2,6 +2,7 @@
 DEFAULT_LENGHT = 100
 USER_RESET_CODE_LEN = 6
 MAX_RESET_ATTEMPTS = 5
+LIST_PER_PAGE = 20
 
 # Тексты для модели Users
 USER_HELP_TEXT_NAME = "Имя"
@@ -68,3 +69,14 @@ CAR_CHILD_SEAT_CHOICES = [
     (True, "Да"),
     (False, "Нет"),
 ]
+
+# Тексты для модели Review
+
+REVIEW_VERBOSE_NAME = "Отзыв"
+REVIEW_VERBOSE_NAME_PLURAL = "Отзывы"
+
+CAR_USER = "Водитель"
+CAR_SCORE = "Оценка"
+CAR_TAKEN = "Выбранная машина"
+DRIVERS_COMMENT = "Комментарий"
+COMMENT_CREATED_AT = "Время создания оценки"
