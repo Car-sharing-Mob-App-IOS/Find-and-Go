@@ -36,3 +36,14 @@ def get_attempts_word(attempts):
         return "попытки"
     else:
         return "попыток"
+
+
+def image_upload_to(instance, filename):
+    """
+    Метод класса Car, предназначенный для генерации пути
+    сохранения изображения автомобиля.
+    """
+    return (
+        f"cars/images/{instance.company}/{instance.brand}_"
+        f"{instance.model}/{filename}"
+    )
