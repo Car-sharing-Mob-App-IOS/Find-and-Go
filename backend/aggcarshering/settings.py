@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # IF TRUE - USES SQLITE3 FOR LOCAL TASTING, IF FALSE - USES POSTGRESQL
-LOCAL = bool(os.getenv("LOCAL", default="False") == "True")
+LOCAL = bool(os.getenv("LOCAL", default="True") == "True")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -46,11 +46,15 @@ INSTALLED_APPS = [
     "phonenumber_field",
     "users.apps.UsersConfig",
     "cars.apps.CarsConfig",
+    "reviews.apps.ReviewsConfig",
     "api",
     "drf_spectacular",
     "django_filters",
+    'social_django',
+    'rest_framework_simplejwt',
 ]
 
+SOCIAL_AUTH_JSONFIELD_ENABLED = True
 
 AUTH_USER_MODEL = "users.User"
 
@@ -62,6 +66,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = "aggcarshering.urls"
@@ -69,7 +74,7 @@ ROOT_URLCONF = "aggcarshering.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -77,6 +82,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -204,22 +211,48 @@ DJOSER = {
         "current_user": "users.serializers.UserSerializer",
         "user_create": "users.serializers.UserSerializer",
     },
+    "SOCIAL_AUTH_TOKEN_STRATEGY":
+        "djoser.social.token.jwt.TokenStrategy",
+        "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": ["https://oauth.yandex.com/authorize"],
 }
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.yandex.YandexOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+SOCIAL_AUTH_YANDEX_OAUTH2_KEY = '277e4f91349949399a485e9084ceb788'
+
+SOCIAL_AUTH_YANDEX_OAUTH2_SECRET = 'cd82f236cb16417c9611e722231fb9fc'
+
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
+
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.yandex.YandexOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 ##############################################################################
 #                                  EMAIL                                     #
 ##############################################################################
 
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", default="False")
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
 if LOCAL:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-else:
+    # EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+    EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", default="False")
+    EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", default="False")
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_HOST = "smtp.yandex.ru"
     EMAIL_PORT = 465
     EMAIL_USE_SSL = True
-    EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", default="False")
-    EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", default="False")
+else:
+    # EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", default="False")
+    EMAIL_HOST = 'skvmrelay.netangels.ru'
+    EMAIL_PORT = 25
 
-    EMAIL_SERVER = EMAIL_HOST_USER
-    DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-    EMAIL_ADMIN = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
