@@ -1,16 +1,22 @@
 from django.db.transaction import atomic
+from django.db import IntegrityError
+
+from django_filters.rest_framework import DjangoFilterBackend
+
 from drf_spectacular.utils import extend_schema, extend_schema_view
 
 from rest_framework import status
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.viewsets import ModelViewSet
 
+from reviews.serializers import AddReviewSerializer
+
+from .filters import CarFilter
 from .models import Car
 from .serializers import CarSerializer
-from .filters import CarFilter
-from django_filters.rest_framework import DjangoFilterBackend
 
 
 @extend_schema(tags=["Машины"])
@@ -21,6 +27,7 @@ from django_filters.rest_framework import DjangoFilterBackend
     update=extend_schema(summary="Полное обновление машины"),
     partial_update=extend_schema(summary="Частичное обновление машины"),
     destroy=extend_schema(summary="Удаление машины"),
+    add_review=extend_schema(summary="Добавление отзыва к автомобилю."),
 )
 class CarViewSet(ModelViewSet):
     """Представление для работы с публичными данными автомобилей."""
@@ -33,6 +40,15 @@ class CarViewSet(ModelViewSet):
         DjangoFilterBackend,
     ]
     filterset_class = CarFilter
+
+    def perform_create(self, serializer, car):
+        serializer.save(car=car, user=self.request.user)
+
+    def get_serializer_class(self):
+        if self.action == "add_review":
+            return AddReviewSerializer
+        else:
+            return CarSerializer
 
     @atomic
     def create(self, request, *args, **kwargs):
@@ -50,6 +66,7 @@ class CarViewSet(ModelViewSet):
 
     @atomic
     def update(self, request, *args, **kwargs):
+        """Обновить данные об автомобиле."""
         partial = kwargs.pop("partial", False)
         instance = self.get_object()
         serializer = self.get_serializer(
@@ -61,3 +78,30 @@ class CarViewSet(ModelViewSet):
         serializer.save()
 
         return Response(serializer.data)
+
+    @action(
+        detail=True,
+        methods=["POST"],
+        permission_classes=[IsAuthenticated],
+    )
+    def add_review(self, request, pk=None):
+        """Добавление отзыва к автомобилю."""
+        car = self.get_object()
+        serializer = self.get_serializer(data=request.data)
+
+        try:
+            if serializer.is_valid():
+                serializer.save(car=car, user=request.user)
+                response_data = {
+                    "message": "Отзыв успешно создан",
+                    "review": serializer.data,
+                }
+                return Response(response_data, status=status.HTTP_201_CREATED)
+
+        except IntegrityError:
+            return Response(
+                {"message": "Вы уже оставили отзыв об этой машине."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
