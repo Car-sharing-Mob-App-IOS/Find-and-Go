@@ -3,6 +3,10 @@ DEFAULT_LENGHT = 100
 USER_RESET_CODE_LEN = 6
 MAX_RESET_ATTEMPTS = 5
 LIST_PER_PAGE = 20
+# Размер загружаймой картинки в КБ
+LOAD_IMAGE_SIZE_KB = 200
+# Пропорция сохраняемой картинки
+TARGET_IMAGE_SIZE = (200, 120)
 
 # Тексты для модели Users
 USER_HELP_TEXT_NAME = "Имя"
