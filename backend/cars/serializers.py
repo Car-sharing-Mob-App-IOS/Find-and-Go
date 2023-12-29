@@ -3,8 +3,6 @@ from rest_framework import serializers
 from .validators import state_number_validate
 from .models import Car, CoordinatesCar
 
-from versatileimagefield.serializers import VersatileImageFieldSerializer
-
 
 class CoordinatesCarSerializer(serializers.ModelSerializer):
     """Сериализатор для модели CoordinatesCar."""
@@ -18,7 +16,6 @@ class CarSerializer(serializers.ModelSerializer):
     """Сериализатор для модели Car."""
 
     coordinates = CoordinatesCarSerializer()
-    image = VersatileImageFieldSerializer(sizes="person_headshot")
 
     class Meta:
         model = Car
