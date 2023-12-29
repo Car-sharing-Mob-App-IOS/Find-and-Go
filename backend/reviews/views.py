@@ -22,7 +22,7 @@ from .permissions import IsReviewAuthorOrReadOnly
     partial_update=extend_schema(summary="Частичное обновление отзыва"),
     destroy=extend_schema(summary="Удаление отзыва"),
 )
-class ReviewView(ModelViewSet):
+class ReviewViewSet(ModelViewSet):
     """Представление для работы с отзывами пользователей."""
 
     queryset = Review.objects.all()
