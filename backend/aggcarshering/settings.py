@@ -1,7 +1,8 @@
+# flake8: noqa
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -227,6 +228,6 @@ else:
     # EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", default="False")
     EMAIL_HOST = 'skvmrelay.netangels.ru'
     EMAIL_PORT = 25
-    
-EMAIL_ADMIN = EMAIL_HOST_USER    
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER 
+
+EMAIL_ADMIN = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
