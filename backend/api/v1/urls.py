@@ -24,6 +24,7 @@ urlpatterns = [
     path("", include(user_router_v1.urls)),
     path("auth/", include("djoser.urls.authtoken")),
     path("swagger/", SpectacularSwaggerView.as_view(), name="swagger"),
+    path('auth/', include('djoser.social.urls')),
     path("reviews/", ReviewListCreateView.as_view(
         {
             'get': 'list', 'post': 'create'
