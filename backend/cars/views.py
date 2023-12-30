@@ -12,6 +12,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
+from core.texts import ADD_REVIEW_SUCCESS, REVIEW_ALREADY_EXISTS
 from reviews.serializers import AddReviewSerializer
 
 from .filters import CarFilter
@@ -93,14 +94,14 @@ class CarViewSet(ModelViewSet):
             if serializer.is_valid():
                 serializer.save(car=car, user=request.user)
                 response_data = {
-                    "message": "Отзыв успешно создан",
+                    "message": ADD_REVIEW_SUCCESS,
                     "review": serializer.data,
                 }
                 return Response(response_data, status=status.HTTP_201_CREATED)
 
         except IntegrityError:
             return Response(
-                {"message": "Вы уже оставили отзыв об этой машине."},
+                {"message": REVIEW_ALREADY_EXISTS},
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
