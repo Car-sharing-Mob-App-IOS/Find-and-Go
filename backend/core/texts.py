@@ -2,6 +2,17 @@
 DEFAULT_LENGHT = 100
 USER_RESET_CODE_LEN = 6
 MAX_RESET_ATTEMPTS = 5
+LIST_PER_PAGE = 20
+
+# ПАРАМЕТРЫ ИЗОБРАЖЕНИЯ.
+LOAD_IMAGE_SIZE_KB = 200
+"Размер загружаймой картинки в КБ"
+TARGET_IMAGE_SIZE = (200, 120)
+"Пропорция сохраняемой картинки"
+DEFAULT_QUALITY = 90
+QUALITY_REDUCTION_STEP = 5
+"Шаг снижения качества сохраняемой картинки"
+
 
 # Тексты для модели Users
 USER_HELP_TEXT_NAME = "Имя"
@@ -68,3 +79,16 @@ CAR_CHILD_SEAT_CHOICES = [
     (True, "Да"),
     (False, "Нет"),
 ]
+
+# Тексты для модели Review
+
+REVIEW_VERBOSE_NAME = "Отзыв"
+REVIEW_VERBOSE_NAME_PLURAL = "Отзывы"
+
+CAR_USER = "Водитель"
+CAR_SCORE = "Оценка"
+CAR_TAKEN = "Выбранная машина"
+DRIVERS_COMMENT = "Комментарий"
+COMMENT_CREATED_AT = "Время создания оценки"
+ADD_REVIEW_SUCCESS = "Отзыв успешно создан"
+REVIEW_ALREADY_EXISTS = "Вы уже оставили отзыв об этой машине."

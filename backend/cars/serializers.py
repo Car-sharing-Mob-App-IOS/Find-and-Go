@@ -1,5 +1,6 @@
 from rest_framework import serializers
 
+from .validators import state_number_validate
 from .models import Car, CoordinatesCar
 
 
@@ -20,35 +21,60 @@ class CarSerializer(serializers.ModelSerializer):
         model = Car
         fields = "__all__"
 
-    def validate_state_number(self, value):
+    def create_or_update_coordinates(self, instance, coordinates_data):
         """
-        Проверка уникальности номера состояния.
+        Создает или обновляет координаты автомобиля.
         """
-        if Car.objects.filter(state_number=value).exists():
-            raise serializers.ValidationError(
-                "Автомобиль с таким номером уже существует."
+        if instance:
+            coordinates_serializer = CoordinatesCarSerializer(
+                instance.coordinates,
+                data=coordinates_data,
+                partial=True,
             )
-        return value
+        else:
+            coordinates_serializer = CoordinatesCarSerializer(
+                data=coordinates_data,
+                partial=True,
+            )
+        coordinates_serializer.is_valid(raise_exception=True)
+        return coordinates_serializer.save()
 
     def create(self, validated_data):
-        coordinates_data = validated_data.pop("coordinates")
-        coordinates_serializer = CoordinatesCarSerializer(
-            data=coordinates_data,
+        """
+        Создает новый объект Car с указанными данными.
+        """
+        coordinates_data = validated_data.pop("coordinates", {})
+        coordinates_instance = self.create_or_update_coordinates(
+            None, coordinates_data
         )
+        validated_data["coordinates"] = coordinates_instance
 
-        if coordinates_serializer.is_valid():
-            coordinates_instance = coordinates_serializer.save()
-            validated_data["coordinates"] = coordinates_instance
+        state_number_validate(validated_data["state_number"])
 
-            # Проверяем уникальность номера состояния
-            self.validate_state_number(validated_data.get("state_number"))
+        car = Car.objects.create(**validated_data)
+        return car
 
-            car = Car.objects.create(**validated_data)
-            return car
+    def update(self, instance, validated_data):
+        """
+        Обновляет существующий объект Car с указанными данными.
+        """
+        coordinates_data = validated_data.pop("coordinates", {})
+        coordinates_instance = self.create_or_update_coordinates(
+            instance, coordinates_data
+        )
+        validated_data["coordinates"] = coordinates_instance
 
-        raise serializers.ValidationError("Ошибка валидации координат")
+        state_number = validated_data.get("state_number")
+
+        if state_number:
+            state_number_validate(state_number, instance)
+
+        return super().update(instance, validated_data)
 
     def to_representation(self, instance):
+        """
+        Преобразует объект Car в представление для API.
+        """
         data = super().to_representation(instance)
         data["rating"] = float(data["rating"])
         return data

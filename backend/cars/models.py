@@ -1,6 +1,4 @@
-from django.db import (
-    models,
-)
+from django.db import models
 from django.core.validators import (
     MaxValueValidator,
     MinValueValidator,
@@ -33,6 +31,7 @@ from core.texts import (
     CAR_CHILD_SEAT_CHOICES,
 )
 
+from .utils import image_upload_to, resize_image
 from .validators import (
     validate_state_number,
 )
@@ -77,7 +76,7 @@ class Car(models.Model):
         related_name="car_coordinates",
     )
     image = models.ImageField(
-        upload_to="image_upload_to",
+        upload_to=image_upload_to,
         null=True,
         blank=False,
         default="default_image/default_car.png",
@@ -144,16 +143,8 @@ class Car(models.Model):
     def __str__(self):
         return f"[{self.company}]: {self.brand} {self.model}"
 
-    @staticmethod
-    def image_upload_to(
-        instance,
-        filename,
-    ):
-        """
-        Статический метод класса Car, предназначенный для генерации пути
-        сохранения изображения автомобиля.
-        """
-        return (
-            f"cars/images/{instance.company}/{instance.brand}_"
-            f"{instance.model}/{filename}"
-        )
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+
+        if self.image:
+            resize_image(self.image.path)
