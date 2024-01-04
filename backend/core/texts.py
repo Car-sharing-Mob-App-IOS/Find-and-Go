@@ -5,13 +5,8 @@ MAX_RESET_ATTEMPTS = 5
 LIST_PER_PAGE = 20
 
 # ПАРАМЕТРЫ ИЗОБРАЖЕНИЯ.
-LOAD_IMAGE_SIZE_KB = 200
-"Размер загружаймой картинки в КБ"
 TARGET_IMAGE_SIZE = (200, 120)
 "Пропорция сохраняемой картинки"
-DEFAULT_QUALITY = 90
-QUALITY_REDUCTION_STEP = 5
-"Шаг снижения качества сохраняемой картинки"
 
 
 # Тексты для модели Users
