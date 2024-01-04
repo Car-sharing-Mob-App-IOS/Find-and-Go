@@ -77,7 +77,6 @@ class Car(models.Model):
     )
     image = models.ImageField(
         upload_to=image_upload_to,
-        null=True,
         blank=False,
         default="default_image/default_car.png",
         help_text=CAR_HELP_TEXT_IMAGE,
