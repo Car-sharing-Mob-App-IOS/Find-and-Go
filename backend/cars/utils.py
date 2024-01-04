@@ -20,7 +20,7 @@ def resize_image(
     image = Image.open(image_path)
 
     # Изменяем размер изображения
-    image.thumbnail(target_size)
+    image = image.resize(target_size, resample=Image.LANCZOS)
 
     # Сжимаем изображение с уменьшением качества,
     # чтобы уложиться в указанный размер файла
