@@ -1,4 +1,3 @@
-# flake8: noqa
 import os
 from pathlib import Path
 
@@ -51,8 +50,8 @@ INSTALLED_APPS = [
     "api",
     "drf_spectacular",
     "django_filters",
-    'social_django',
-    'rest_framework_simplejwt',
+    "social_django",
+    "rest_framework_simplejwt",
 ]
 
 SOCIAL_AUTH_JSONFIELD_ENABLED = True
@@ -67,7 +66,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'social_django.middleware.SocialAuthExceptionMiddleware',
+    "social_django.middleware.SocialAuthExceptionMiddleware",
 ]
 
 ROOT_URLCONF = "aggcarshering.urls"
@@ -83,8 +82,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                'social_django.context_processors.backends',
-                'social_django.context_processors.login_redirect',
+                "social_django.context_processors.backends",
+                "social_django.context_processors.login_redirect",
             ],
         },
     },
@@ -212,26 +211,27 @@ DJOSER = {
         "current_user": "users.serializers.UserSerializer",
         "user_create": "users.serializers.UserSerializer",
     },
-    "SOCIAL_AUTH_TOKEN_STRATEGY":
-        "djoser.social.token.jwt.TokenStrategy",
-        "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": ["https://oauth.yandex.com/authorize"],
+    "SOCIAL_AUTH_TOKEN_STRATEGY": "djoser.social.token.jwt.TokenStrategy",
+    "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": [
+        "https://oauth.yandex.com/authorize"
+    ],
 }
 
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.yandex.YandexOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
+    "social_core.backends.yandex.YandexOAuth2",
+    "django.contrib.auth.backends.ModelBackend",
 )
 
-SOCIAL_AUTH_YANDEX_OAUTH2_KEY = '277e4f91349949399a485e9084ceb788'
+SOCIAL_AUTH_YANDEX_OAUTH2_KEY = "277e4f91349949399a485e9084ceb788"
 
-SOCIAL_AUTH_YANDEX_OAUTH2_SECRET = 'cd82f236cb16417c9611e722231fb9fc'
+SOCIAL_AUTH_YANDEX_OAUTH2_SECRET = "cd82f236cb16417c9611e722231fb9fc"
 
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
 
 
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.yandex.YandexOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
+    "social_core.backends.yandex.YandexOAuth2",
+    "django.contrib.auth.backends.ModelBackend",
 )
 
 ##############################################################################
@@ -252,7 +252,7 @@ if LOCAL:
     EMAIL_USE_SSL = True
 else:
     # EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", default="False")
-    EMAIL_HOST = 'skvmrelay.netangels.ru'
+    EMAIL_HOST = "skvmrelay.netangels.ru"
     EMAIL_PORT = 25
 
 EMAIL_ADMIN = EMAIL_HOST_USER
