@@ -17,7 +17,8 @@ USER_RESET_CODE = "Код для сброса пароля"
 USER_RESET_ATTEMPTS = "Счётчик количество попыток сброса пароля."
 
 USER_EMAIL_VALIDATOR_MESSAGE = "Введите корректный адрес электронной почты."
-
+USER_COORDINATES_LABEL = "Координаты пользователя."
+USER_COORDINATES_HELP_TEXT = "Укажите координаты пользователя."
 USER_VERBOSE_NAME = "Пользователь"
 USER_VERBOSE_NAME_PLURAL = "Пользователи"
 
