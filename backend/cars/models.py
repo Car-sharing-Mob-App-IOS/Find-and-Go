@@ -3,8 +3,10 @@ from django.core.validators import (
     MaxValueValidator,
     MinValueValidator,
 )
+from django.contrib.postgres.fields import ArrayField
 
 from core.texts import (
+    CAR_VARIOUS_LABEL,
     CAR_BRAND_LABEL,
     CAR_CHILD_SEAT_LABEL,
     CAR_COMPANY_LABEL,
@@ -114,10 +116,17 @@ class Car(models.Model):
         choices=CAR_TYPE_ENGINE_CHOICES,
         max_length=30,
     )
-    child_seat = models.BooleanField(
-        CAR_CHILD_SEAT_LABEL,
-        default=False,
-        choices=CAR_CHILD_SEAT_CHOICES,
+    # child_seat = models.BooleanField(
+    #     CAR_CHILD_SEAT_LABEL,
+    #     default=False,
+    #     choices=CAR_CHILD_SEAT_CHOICES,
+    # )
+    various = ArrayField(
+        models.CharField(
+            CAR_VARIOUS_LABEL,
+            choices=CAR_TYPE_ENGINE_CHOICES,
+            max_length=255,
+        )
     )
     power_reserve = models.IntegerField(CAR_POWER_RESERVE_LABEL)
     rating = models.DecimalField(
