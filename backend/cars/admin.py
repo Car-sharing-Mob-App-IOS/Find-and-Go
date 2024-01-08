@@ -51,8 +51,9 @@ class CarAdmin(admin.ModelAdmin):
             _("Детали машин"),
             {
                 "fields": (
+                    "various",
                     "type_engine",
-                    "child_seat",
+                    # "child_seat",
                     "power_reserve",
                     "rating",
                     "coordinates",
