@@ -37,11 +37,12 @@ from .validators import (
 )
 
 
-class CoordinatesCar(models.Model):
-    """Модель, представляющая координаты местоположения."""
+class Coordinates(models.Model):
+    """Абстрактная модель координат."""
 
     latitude = models.FloatField(
         "Широта",
+        default=0.0,
         validators=[
             MaxValueValidator(limit_value=90.0),
             MinValueValidator(limit_value=-90.0),
@@ -50,6 +51,7 @@ class CoordinatesCar(models.Model):
     )
     longitude = models.FloatField(
         "Долгота",
+        default=0.0,
         validators=[
             MaxValueValidator(limit_value=180.0),
             MinValueValidator(limit_value=-180.0),
@@ -60,9 +62,16 @@ class CoordinatesCar(models.Model):
     class Meta:
         verbose_name = "Координата"
         verbose_name_plural = "Координаты"
+        abstract = True
 
     def __str__(self):
         return f"Latitude: {self.latitude}, Longitude: {self.longitude}"
+
+
+class CoordinatesCar(Coordinates):
+    """Модель, представляющая координаты местоположения."""
+
+    pass
 
 
 class Car(models.Model):
