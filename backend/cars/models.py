@@ -3,12 +3,10 @@ from django.core.validators import (
     MaxValueValidator,
     MinValueValidator,
 )
-from django.contrib.postgres.fields import ArrayField
 
 from core.texts import (
     CAR_VARIOUS_LABEL,
     CAR_BRAND_LABEL,
-    CAR_CHILD_SEAT_LABEL,
     CAR_COMPANY_LABEL,
     CAR_COORDINATES_HELP_TEXT,
     CAR_COORDINATES_LABEL,
@@ -30,7 +28,6 @@ from core.texts import (
     CAR_TYPE_CAR_CHOICES,
     CAR_TYPE_ENGINE_CHOICES,
     CAR_IS_AVAILABLE_CHOICES,
-    CAR_CHILD_SEAT_CHOICES,
 )
 
 from .utils import image_upload_to, resize_image
@@ -125,17 +122,15 @@ class Car(models.Model):
         choices=CAR_TYPE_ENGINE_CHOICES,
         max_length=30,
     )
-    # child_seat = models.BooleanField(
-    #     CAR_CHILD_SEAT_LABEL,
-    #     default=False,
-    #     choices=CAR_CHILD_SEAT_CHOICES,
+    # various = models.ManyToManyField(
+    #     verbose_name=CAR_VARIOUS_LABEL,
+    #     to="CarVarious",
+    #     related_name="car_various",
     # )
-    various = ArrayField(
-        models.CharField(
-            CAR_VARIOUS_LABEL,
-            choices=CAR_TYPE_ENGINE_CHOICES,
-            max_length=255,
-        )
+    various = models.CharField(
+        CAR_VARIOUS_LABEL,
+        choices=CAR_TYPE_ENGINE_CHOICES,
+        max_length=255,
     )
     power_reserve = models.IntegerField(CAR_POWER_RESERVE_LABEL)
     rating = models.DecimalField(
@@ -165,3 +160,27 @@ class Car(models.Model):
 
         if self.image:
             resize_image(self.image.path)
+
+
+class CarVarious(models.Model):
+    """Различные варианты поля Car.various"""
+
+    name = models.CharField(
+        verbose_name="Название",
+        max_length=200,
+        unique=True,
+        db_index=True,
+    )
+    slug = models.SlugField(
+        verbose_name="Уникальный слаг",
+        max_length=200,
+        unique=True,
+    )
+
+    class Meta:
+        verbose_name = "Разное"
+        verbose_name_plural = "Разное"
+        ordering = ("name",)
+
+    def __str__(self):
+        return f"{self.name} (slug: {self.slug})"
