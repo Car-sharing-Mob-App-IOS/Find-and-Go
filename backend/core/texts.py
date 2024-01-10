@@ -17,7 +17,8 @@ USER_RESET_CODE = "Код для сброса пароля"
 USER_RESET_ATTEMPTS = "Счётчик количество попыток сброса пароля."
 
 USER_EMAIL_VALIDATOR_MESSAGE = "Введите корректный адрес электронной почты."
-
+USER_COORDINATES_LABEL = "Координаты пользователя."
+USER_COORDINATES_HELP_TEXT = "Укажите координаты пользователя."
 USER_VERBOSE_NAME = "Пользователь"
 USER_VERBOSE_NAME_PLURAL = "Пользователи"
 
@@ -38,11 +39,11 @@ CAR_TYPE_LABEL = "Тип"
 CAR_STATE_NUMBER_LABEL = "Госномер"
 CAR_STATE_NUMBER_VALIDATOR_MESSAGE = "Неверный формат госномера"
 CAR_ENGINE_TYPE_LABEL = "Тип двигателя"
-CAR_CHILD_SEAT_LABEL = "Присутствие детского кресла"
 CAR_POWER_RESERVE_LABEL = "Запас хода"
 CAR_RATING_LABEL = "Рейтинг автомобиля"
 CAR_COORDINATES_LABEL = "Координаты автомобиля"
 CAR_COORDINATES_HELP_TEXT = "Укажите координаты автомобиля"
+CAR_VARIOUS_LABEL = "Разное"
 
 CAR_VERBOSE_NAME = "Автомобиль"
 CAR_VERBOSE_NAME_PLURAL = "Автомобили"
@@ -56,6 +57,7 @@ CAR_NAME_COMPANY_CHOICES = [
     ("BelkaCar", "BelkaCar"),
     ("YandexDrive", "ЯндексДрайв"),
     ("CityDrive", "Ситидрайв"),
+    ("DelyMobil", "Делимобиль"),
 ]
 CAR_TYPE_ENGINE_CHOICES = [
     ("electro", "Электрический"),
@@ -64,16 +66,24 @@ CAR_TYPE_ENGINE_CHOICES = [
 CAR_TYPE_CAR_CHOICES = [
     ("sedan", "Седан"),
     ("hatchback", "Хэтчбек"),
+    ("universak", "Универсал"),
+    ("kupe", "Купе"),
     ("minivan", "Минивен"),
+    ("vnedorojnik", "Внедорожник"),
 ]
 CAR_IS_AVAILABLE_CHOICES = [
     (True, "Да"),
     (False, "Нет"),
 ]
-CAR_CHILD_SEAT_CHOICES = [
-    (True, "Да"),
-    (False, "Нет"),
+CAR_VARIOUS_CHOICES = [
+    ("child_seat", "Детское кресло"),
+    ("heated_steering_wheel", "Подогрев руля"),
+    ("remote_heating", "Удаленный подогрев"),
+    ("without_pasting", "Без оклейки"),
+    ("shovel", "Лопата"),
+    ("for_big_company", "Для большой компании"),
 ]
+
 
 # Тексты для модели Review
 

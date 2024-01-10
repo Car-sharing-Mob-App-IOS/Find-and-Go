@@ -4,13 +4,26 @@ from djoser.serializers import UserCreateSerializer
 
 from rest_framework import serializers
 
-from .models import User
+from .models import User, UserCoordinates
+
+
+class CoordinatesUserSerializer(serializers.ModelSerializer):
+    """Сериализатор для модели CoordinatesUser."""
+
+    class Meta:
+        model = UserCoordinates
+        fields = (
+            "latitude",
+            "longitude",
+        )
 
 
 class UserSerializer(UserCreateSerializer):
     """
     Сериализатор для модели пользователя .
     """
+
+    coordinates = CoordinatesUserSerializer()
 
     class Meta:
         model = User
@@ -20,6 +33,7 @@ class UserSerializer(UserCreateSerializer):
             "first_name",
             "last_name",
             "password",
+            "coordinates",
         ]
 
         extra_kwargs = {
@@ -35,6 +49,14 @@ class UserSerializer(UserCreateSerializer):
 
         if request.method == "GET":
             data.pop("password", None)
+
+        return data
+
+    def validate(self, data):
+        password = data.get("password", None)
+
+        if password:
+            validate_password(password)
 
         return data
 
