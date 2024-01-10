@@ -1,4 +1,5 @@
 import django_filters
+
 from .models import Car, CarVarious
 
 
@@ -18,6 +19,7 @@ class CarFilter(django_filters.FilterSet):
         field_name="various__slug",
         to_field_name="slug",
         queryset=CarVarious.objects.all(),
+        conjoined=True
     )
 
     class Meta:
