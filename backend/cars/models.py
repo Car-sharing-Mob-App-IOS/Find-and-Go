@@ -122,15 +122,10 @@ class Car(models.Model):
         choices=CAR_TYPE_ENGINE_CHOICES,
         max_length=30,
     )
-    # various = models.ManyToManyField(
-    #     verbose_name=CAR_VARIOUS_LABEL,
-    #     to="CarVarious",
-    #     related_name="car_various",
-    # )
-    various = models.CharField(
-        CAR_VARIOUS_LABEL,
-        choices=CAR_TYPE_ENGINE_CHOICES,
-        max_length=255,
+    various = models.ManyToManyField(
+        verbose_name=CAR_VARIOUS_LABEL,
+        to="CarVarious",
+        related_name="car_various",
     )
     power_reserve = models.IntegerField(CAR_POWER_RESERVE_LABEL)
     rating = models.DecimalField(
