@@ -1,7 +1,8 @@
 import os
+from datetime import timedelta
 from pathlib import Path
-from dotenv import load_dotenv
 
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -179,6 +180,11 @@ SPECTACULAR_SETTINGS = {
     "DISABLE_ERRORS_AND_WARNINGS": True,
 }
 
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+    'AUTH_HEADER_TYPES': ('Bearer',),
+}
+
 DJOSER = {
     "LOGIN_FIELD": "email",
     "USER_CREATE_PASSWORD_RETYPE": True,
@@ -226,6 +232,6 @@ else:
     # EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", default="False")
     EMAIL_HOST = 'skvmrelay.netangels.ru'
     EMAIL_PORT = 25
-    
-EMAIL_ADMIN = EMAIL_HOST_USER    
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER 
+
+EMAIL_ADMIN = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
