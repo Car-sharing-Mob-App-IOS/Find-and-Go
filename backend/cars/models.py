@@ -28,6 +28,7 @@ from core.texts import (
     CAR_TYPE_CAR_CHOICES,
     CAR_TYPE_ENGINE_CHOICES,
     CAR_IS_AVAILABLE_CHOICES,
+    CAR_POWER_RESERVE_CHOICES
 )
 
 from .utils import image_upload_to, resize_image
@@ -127,7 +128,11 @@ class Car(models.Model):
         to="CarVarious",
         related_name="car_various",
     )
-    power_reserve = models.IntegerField(CAR_POWER_RESERVE_LABEL)
+    power_reserve = models.CharField(
+        CAR_POWER_RESERVE_LABEL,
+        choices=CAR_POWER_RESERVE_CHOICES,
+        max_length=30,
+    )
     rating = models.DecimalField(
         CAR_RATING_LABEL,
         max_digits=3,

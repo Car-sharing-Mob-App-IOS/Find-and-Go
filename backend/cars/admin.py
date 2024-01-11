@@ -1,7 +1,12 @@
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 
-from .models import CoordinatesCar, Car
+from .models import CoordinatesCar, Car, CarVarious
+
+
+@admin.register(CarVarious)
+class CarVariousAdmin(admin.ModelAdmin):
+    pass
 
 
 @admin.register(CoordinatesCar)
