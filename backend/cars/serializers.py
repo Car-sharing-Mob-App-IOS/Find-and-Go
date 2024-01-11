@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
-from .validators import state_number_validate
 from .models import Car, CoordinatesCar
+from .validators import state_number_validate
 
 
 class CoordinatesCarSerializer(serializers.ModelSerializer):
@@ -22,9 +22,7 @@ class CarSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
     def create_or_update_coordinates(self, instance, coordinates_data):
-        """
-        Создает или обновляет координаты автомобиля.
-        """
+        """Создает или обновляет координаты автомобиля."""
         if instance:
             coordinates_serializer = CoordinatesCarSerializer(
                 instance.coordinates,
@@ -40,9 +38,7 @@ class CarSerializer(serializers.ModelSerializer):
         return coordinates_serializer.save()
 
     def create(self, validated_data):
-        """
-        Создает новый объект Car с указанными данными.
-        """
+        """Создает новый объект Car с указанными данными."""
         coordinates_data = validated_data.pop("coordinates", {})
         coordinates_instance = self.create_or_update_coordinates(
             None, coordinates_data
@@ -55,9 +51,7 @@ class CarSerializer(serializers.ModelSerializer):
         return car
 
     def update(self, instance, validated_data):
-        """
-        Обновляет существующий объект Car с указанными данными.
-        """
+        """Обновляет существующий объект Car с указанными данными."""
         coordinates_data = validated_data.pop("coordinates", {})
         coordinates_instance = self.create_or_update_coordinates(
             instance, coordinates_data
@@ -72,9 +66,7 @@ class CarSerializer(serializers.ModelSerializer):
         return super().update(instance, validated_data)
 
     def to_representation(self, instance):
-        """
-        Преобразует объект Car в представление для API.
-        """
+        """Преобразует объект Car в представление для API."""
         data = super().to_representation(instance)
-        data["rating"] = float(data["rating"])
+        data["rating"] = str(data["rating"])
         return data
