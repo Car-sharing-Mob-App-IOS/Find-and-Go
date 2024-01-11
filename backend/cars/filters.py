@@ -3,7 +3,10 @@ import django_filters
 from .models import Car, CarVarious
 
 
-class RatingFilter(django_filters.rest_framework.BaseInFilter, django_filters.rest_framework.NumberFilter):
+class RatingFilter(
+    django_filters.rest_framework.BaseInFilter,
+    django_filters.rest_framework.NumberFilter
+):
     pass
 
 

@@ -4,11 +4,6 @@ from django.utils.translation import gettext_lazy as _
 from .models import CoordinatesCar, Car, CarVarious
 
 
-@admin.register(CarVarious)
-class CarVariousAdmin(admin.ModelAdmin):
-    pass
-
-
 @admin.register(CoordinatesCar)
 class CoordinatesCarAdmin(admin.ModelAdmin):
     list_display = [
@@ -58,7 +53,6 @@ class CarAdmin(admin.ModelAdmin):
                 "fields": (
                     "various",
                     "type_engine",
-                    # "child_seat",
                     "power_reserve",
                     "rating",
                     "coordinates",
