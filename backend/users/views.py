@@ -2,6 +2,7 @@ from django.db.transaction import atomic
 from django.shortcuts import get_object_or_404
 
 from djoser.views import UserViewSet as DjoserUserViewSet
+from djoser.permissions import CurrentUserOrAdminOrReadOnly
 
 from drf_spectacular.utils import (
     extend_schema,
@@ -13,17 +14,22 @@ from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.exceptions import ValidationError
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 
 from core.texts import MAX_RESET_ATTEMPTS
-from core.utils import generate_reset_code, send_confirmation_code, get_attempts_word
+from core.utils import (
+    generate_reset_code,
+    send_confirmation_code,
+    get_attempts_word,
+)
 
-from .models import User
+from .models import User, UserCoordinates
 from .serializers import (
     ResetCodeSerializer,
     SetUserPasswordSerializer,
     UserSerializer,
+    CoordinatesUserSerializer,
 )
 
 
@@ -40,6 +46,9 @@ from .serializers import (
     set_user_password=extend_schema(
         summary="Изменение пароля пользователя после сброса."
     ),
+    set_user_coordinates=extend_schema(
+        summary="Обновление координат пользователя."
+    ),
 )
 class PublicUserViewSet(DjoserUserViewSet):
     """Представление для работы с публичными данными пользователей."""
@@ -47,13 +56,15 @@ class PublicUserViewSet(DjoserUserViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     pagination_class = PageNumberPagination
-    permission_classes = [IsAuthenticated]
+    permission_classes = [CurrentUserOrAdminOrReadOnly]
 
     def get_serializer_class(self):
         if self.action == "reset_code":
             return ResetCodeSerializer
         if self.action == "set_user_password":
             return SetUserPasswordSerializer
+        if self.action == "set_user_coordinates":
+            return CoordinatesUserSerializer
 
         return super().get_serializer_class()
 
@@ -151,3 +162,57 @@ class PublicUserViewSet(DjoserUserViewSet):
             {"success": "Пароль успешно изменен."},
             status=status.HTTP_200_OK,
         )
+
+    @action(
+        detail=True,
+        url_path="set-user-coordinates",
+        permission_classes=[IsAuthenticatedOrReadOnly],
+        methods=["post"],
+    )
+    def set_user_coordinates(self, request, id=None):
+        """Метод для обновления координат пользователя."""
+
+        user = self.get_object()
+        coordinate_data = request.data.get("coordinates")
+
+        if self.request.user != user:
+            return Response(
+                {
+                    "error": "Вы не имеете права обновлять "
+                    "координаты другого пользователя."
+                },
+                status=status.HTTP_403_FORBIDDEN,
+            )
+
+        try:
+            with atomic():
+                if coordinate_data:
+                    if user.coordinates is None:
+                        user.coordinates = UserCoordinates.objects.create()
+
+                    serializer = self.get_serializer(
+                        user.coordinates,
+                        data=coordinate_data,
+                    )
+
+                    if serializer.is_valid(raise_exception=True):
+                        serializer.save()
+                        user.coordinates = serializer.instance
+                        user.save()
+
+                        return Response(
+                            {"success": "Координаты обновлены"},
+                            status=status.HTTP_200_OK,
+                        )
+                    else:
+                        raise ValidationError(serializer.errors)
+        except ValidationError as e:
+            return Response(
+                {"error": "Ошибка валидации", "details": e.detail},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+        except Exception as e:
+            return Response(
+                {"error": "Произошла ошибка", "details": str(e)},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            )

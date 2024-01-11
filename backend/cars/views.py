@@ -1,3 +1,5 @@
+from django.db.models import F
+from django.db.models.functions import Power
 from django.db.transaction import atomic
 from django.db import IntegrityError
 
@@ -51,6 +53,25 @@ class CarViewSet(ModelViewSet):
         else:
             return CarSerializer
 
+    def get_queryset(self):
+        user_coordinates = (
+            self.request.user.coordinates
+            if self.request.user.is_authenticated
+            else None
+        )
+
+        if user_coordinates:
+            return Car.objects.annotate(
+                distance=Power(
+                    F("coordinates__latitude") - user_coordinates.latitude, 2
+                )
+                + Power(
+                    F("coordinates__longitude") - user_coordinates.longitude, 2
+                )
+            ).order_by("distance")
+        else:
+            return Car.objects.all()
+
     @atomic
     def create(self, request, *args, **kwargs):
         """Создать новый автомобиль."""
@@ -80,6 +101,7 @@ class CarViewSet(ModelViewSet):
 
         return Response(serializer.data)
 
+    @atomic
     @action(
         detail=True,
         methods=["POST"],

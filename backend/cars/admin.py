@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 
-from .models import CoordinatesCar, Car
+from .models import CoordinatesCar, Car, CarVarious
 
 
 @admin.register(CoordinatesCar)
@@ -51,8 +51,9 @@ class CarAdmin(admin.ModelAdmin):
             _("Детали машин"),
             {
                 "fields": (
+                    "various",
                     "type_engine",
-                    "child_seat",
+                    # "child_seat",
                     "power_reserve",
                     "rating",
                     "coordinates",
@@ -60,3 +61,15 @@ class CarAdmin(admin.ModelAdmin):
             },
         ),
     )
+
+
+@admin.register(CarVarious)
+class CarVariousAdmin(admin.ModelAdmin):
+    list_display = [
+        "name",
+        "slug",
+    ]
+    search_fields = [
+        "latitude",
+        "longitude",
+    ]

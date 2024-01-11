@@ -1,1 +1,3122 @@
-[{"model": "cars.car", "pk": 1, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0435001\u043d\u0445001", "type_engine": "electro", "child_seat": false, "power_reserve": "0", "rating": 4, "kind_car": "Passenger", "coordinates": 1}}, {"model": "cars.car", "pk": 2, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0445002\u0441\u0442002", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Passenger", "coordinates": 2}}, {"model": "cars.car", "pk": 3, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043d003\u0432\u043a003", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 3}}, {"model": "cars.car", "pk": 4, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0445004\u0445\u0440004", "type_engine": "benzine", "child_seat": true, "power_reserve": "2", "rating": 4, "kind_car": "Passenger", "coordinates": 4}}, {"model": "cars.car", "pk": 5, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0440005\u043a\u0435005", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 2, "kind_car": "Passenger", "coordinates": 5}}, {"model": "cars.car", "pk": 6, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0435006\u0441\u0430006", "type_engine": "benzine", "child_seat": false, "power_reserve": "2", "rating": 4, "kind_car": "Cargo", "coordinates": 6}}, {"model": "cars.car", "pk": 7, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043c007\u0430\u0432007", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 4, "kind_car": "Cargo", "coordinates": 7}}, {"model": "cars.car", "pk": 8, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u043e008\u043a\u043a008", "type_engine": "electro", "child_seat": false, "power_reserve": "1", "rating": 3, "kind_car": "Passenger", "coordinates": 8}}, {"model": "cars.car", "pk": 9, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "minivan", "state_number": "\u0441009\u043a\u043c009", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 2, "kind_car": "Cargo", "coordinates": 9}}, {"model": "cars.car", "pk": 10, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0445010\u043d\u0435010", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Cargo", "coordinates": 10}}, {"model": "cars.car", "pk": 11, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0430011\u0445\u0430011", "type_engine": "benzine", "child_seat": true, "power_reserve": "2", "rating": 4, "kind_car": "Cargo", "coordinates": 11}}, {"model": "cars.car", "pk": 12, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0442012\u043d\u0440012", "type_engine": "benzine", "child_seat": false, "power_reserve": "1", "rating": 1, "kind_car": "Cargo", "coordinates": 12}}, {"model": "cars.car", "pk": 13, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u043c013\u0442\u043e013", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 13}}, {"model": "cars.car", "pk": 14, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043c014\u0432\u0442014", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Passenger", "coordinates": 14}}, {"model": "cars.car", "pk": 15, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0430015\u043a\u0432015", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 1, "kind_car": "Cargo", "coordinates": 15}}, {"model": "cars.car", "pk": 16, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0440016\u043e\u0443016", "type_engine": "electro", "child_seat": true, "power_reserve": "2", "rating": 1, "kind_car": "Cargo", "coordinates": 16}}, {"model": "cars.car", "pk": 17, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0445017\u0441\u043d017", "type_engine": "electro", "child_seat": false, "power_reserve": "2", "rating": 3, "kind_car": "Cargo", "coordinates": 17}}, {"model": "cars.car", "pk": 18, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0441018\u0430\u043c018", "type_engine": "electro", "child_seat": true, "power_reserve": "2", "rating": 4, "kind_car": "Cargo", "coordinates": 18}}, {"model": "cars.car", "pk": 19, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0443019\u043e\u0445019", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Cargo", "coordinates": 19}}, {"model": "cars.car", "pk": 20, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0443020\u043d\u0430020", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 20}}, {"model": "cars.car", "pk": 21, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0441021\u043c\u0442021", "type_engine": "benzine", "child_seat": true, "power_reserve": "2", "rating": 3, "kind_car": "Cargo", "coordinates": 21}}, {"model": "cars.car", "pk": 22, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "minivan", "state_number": "\u0441022\u043e\u0430022", "type_engine": "benzine", "child_seat": false, "power_reserve": "2", "rating": 4, "kind_car": "Cargo", "coordinates": 22}}, {"model": "cars.car", "pk": 23, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0435023\u0432\u0441023", "type_engine": "electro", "child_seat": false, "power_reserve": "1", "rating": 4, "kind_car": "Passenger", "coordinates": 23}}, {"model": "cars.car", "pk": 24, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043e024\u0430\u0441024", "type_engine": "electro", "child_seat": false, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 24}}, {"model": "cars.car", "pk": 25, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u043a025\u043c\u0432025", "type_engine": "benzine", "child_seat": true, "power_reserve": "2", "rating": 2, "kind_car": "Passenger", "coordinates": 25}}, {"model": "cars.car", "pk": 26, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0432026\u0442\u0445026", "type_engine": "benzine", "child_seat": false, "power_reserve": "2", "rating": 3, "kind_car": "Passenger", "coordinates": 26}}, {"model": "cars.car", "pk": 27, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "minivan", "state_number": "\u043e027\u0440\u043d027", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 1, "kind_car": "Cargo", "coordinates": 27}}, {"model": "cars.car", "pk": 28, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0445028\u043d\u043e028", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 28}}, {"model": "cars.car", "pk": 29, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0445029\u043e\u0440029", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 4, "kind_car": "Cargo", "coordinates": 29}}, {"model": "cars.car", "pk": 30, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0440030\u0430\u0445030", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 30}}, {"model": "cars.car", "pk": 31, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "minivan", "state_number": "\u0432031\u0445\u0442031", "type_engine": "electro", "child_seat": true, "power_reserve": "2", "rating": 3, "kind_car": "Cargo", "coordinates": 31}}, {"model": "cars.car", "pk": 32, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0432032\u043e\u0445032", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Cargo", "coordinates": 32}}, {"model": "cars.car", "pk": 33, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u043d033\u043e\u043d033", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 4, "kind_car": "Cargo", "coordinates": 33}}, {"model": "cars.car", "pk": 34, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0435034\u0435\u043e034", "type_engine": "electro", "child_seat": true, "power_reserve": "2", "rating": 3, "kind_car": "Cargo", "coordinates": 34}}, {"model": "cars.car", "pk": 35, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0440035\u0440\u0432035", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 1, "kind_car": "Passenger", "coordinates": 35}}, {"model": "cars.car", "pk": 36, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0432036\u0430\u043d036", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 36}}, {"model": "cars.car", "pk": 37, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043e037\u0442\u0432037", "type_engine": "electro", "child_seat": false, "power_reserve": "2", "rating": 4, "kind_car": "Cargo", "coordinates": 37}}, {"model": "cars.car", "pk": 38, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u043a038\u0432\u0435038", "type_engine": "electro", "child_seat": false, "power_reserve": "1", "rating": 1, "kind_car": "Cargo", "coordinates": 38}}, {"model": "cars.car", "pk": 39, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0442039\u0441\u0443039", "type_engine": "electro", "child_seat": false, "power_reserve": "1", "rating": 4, "kind_car": "Passenger", "coordinates": 39}}, {"model": "cars.car", "pk": 40, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0441040\u043e\u043c040", "type_engine": "electro", "child_seat": false, "power_reserve": "1", "rating": 3, "kind_car": "Cargo", "coordinates": 40}}, {"model": "cars.car", "pk": 41, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043a041\u0430\u0432041", "type_engine": "benzine", "child_seat": false, "power_reserve": "1", "rating": 1, "kind_car": "Passenger", "coordinates": 41}}, {"model": "cars.car", "pk": 42, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043a042\u0441\u0443042", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 3, "kind_car": "Cargo", "coordinates": 42}}, {"model": "cars.car", "pk": 43, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0441043\u043a\u0441043", "type_engine": "electro", "child_seat": false, "power_reserve": "0", "rating": 3, "kind_car": "Cargo", "coordinates": 43}}, {"model": "cars.car", "pk": 44, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0432044\u0441\u0432044", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Cargo", "coordinates": 44}}, {"model": "cars.car", "pk": 45, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0441045\u043a\u0443045", "type_engine": "electro", "child_seat": true, "power_reserve": "2", "rating": 4, "kind_car": "Passenger", "coordinates": 45}}, {"model": "cars.car", "pk": 46, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0440046\u0443\u0445046", "type_engine": "electro", "child_seat": false, "power_reserve": "0", "rating": 1, "kind_car": "Passenger", "coordinates": 46}}, {"model": "cars.car", "pk": 47, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0443047\u043d\u043d047", "type_engine": "electro", "child_seat": false, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 47}}, {"model": "cars.car", "pk": 48, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0445048\u0445\u0442048", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 4, "kind_car": "Cargo", "coordinates": 48}}, {"model": "cars.car", "pk": 49, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0442049\u043a\u0430049", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 3, "kind_car": "Cargo", "coordinates": 49}}, {"model": "cars.car", "pk": 50, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0440050\u0441\u0432050", "type_engine": "electro", "child_seat": true, "power_reserve": "1", "rating": 1, "kind_car": "Cargo", "coordinates": 50}}, {"model": "cars.car", "pk": 51, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0442051\u0442\u043e051", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 1, "kind_car": "Passenger", "coordinates": 51}}, {"model": "cars.car", "pk": 52, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0430052\u0435\u0430052", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 1, "kind_car": "Passenger", "coordinates": 52}}, {"model": "cars.car", "pk": 53, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0430053\u0441\u0432053", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Passenger", "coordinates": 53}}, {"model": "cars.car", "pk": 54, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0441054\u043d\u043d054", "type_engine": "benzine", "child_seat": true, "power_reserve": "2", "rating": 1, "kind_car": "Cargo", "coordinates": 54}}, {"model": "cars.car", "pk": 55, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0432055\u043c\u043e055", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Passenger", "coordinates": 55}}, {"model": "cars.car", "pk": 56, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u043d056\u043c\u0441056", "type_engine": "benzine", "child_seat": true, "power_reserve": "2", "rating": 1, "kind_car": "Cargo", "coordinates": 56}}, {"model": "cars.car", "pk": 57, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u043a057\u0442\u0445057", "type_engine": "benzine", "child_seat": true, "power_reserve": "2", "rating": 4, "kind_car": "Passenger", "coordinates": 57}}, {"model": "cars.car", "pk": 58, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0441058\u043e\u043c058", "type_engine": "benzine", "child_seat": false, "power_reserve": "1", "rating": 2, "kind_car": "Passenger", "coordinates": 58}}, {"model": "cars.car", "pk": 59, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0430059\u0445\u0442059", "type_engine": "electro", "child_seat": true, "power_reserve": "2", "rating": 4, "kind_car": "Passenger", "coordinates": 59}}, {"model": "cars.car", "pk": 60, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0441060\u043c\u0443060", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 3, "kind_car": "Cargo", "coordinates": 60}}, {"model": "cars.car", "pk": 61, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0435061\u0442\u0440061", "type_engine": "electro", "child_seat": false, "power_reserve": "1", "rating": 1, "kind_car": "Passenger", "coordinates": 61}}, {"model": "cars.car", "pk": 62, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0432062\u0440\u0435062", "type_engine": "electro", "child_seat": false, "power_reserve": "2", "rating": 2, "kind_car": "Cargo", "coordinates": 62}}, {"model": "cars.car", "pk": 63, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0440063\u043a\u0440063", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 4, "kind_car": "Cargo", "coordinates": 63}}, {"model": "cars.car", "pk": 64, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0435064\u0442\u0442064", "type_engine": "electro", "child_seat": true, "power_reserve": "1", "rating": 4, "kind_car": "Passenger", "coordinates": 64}}, {"model": "cars.car", "pk": 65, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0441065\u0445\u043d065", "type_engine": "electro", "child_seat": true, "power_reserve": "2", "rating": 1, "kind_car": "Passenger", "coordinates": 65}}, {"model": "cars.car", "pk": 66, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "minivan", "state_number": "\u043c066\u0445\u043a066", "type_engine": "electro", "child_seat": true, "power_reserve": "2", "rating": 2, "kind_car": "Passenger", "coordinates": 66}}, {"model": "cars.car", "pk": 67, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u043a067\u0443\u0440067", "type_engine": "benzine", "child_seat": false, "power_reserve": "1", "rating": 3, "kind_car": "Passenger", "coordinates": 67}}, {"model": "cars.car", "pk": 68, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0432068\u043a\u0440068", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 2, "kind_car": "Cargo", "coordinates": 68}}, {"model": "cars.car", "pk": 69, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0440069\u0445\u0440069", "type_engine": "electro", "child_seat": true, "power_reserve": "0", "rating": 3, "kind_car": "Cargo", "coordinates": 69}}, {"model": "cars.car", "pk": 70, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0442070\u043e\u0432070", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 3, "kind_car": "Cargo", "coordinates": 70}}, {"model": "cars.car", "pk": 71, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u043e071\u043a\u0441071", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 3, "kind_car": "Passenger", "coordinates": 71}}, {"model": "cars.car", "pk": 72, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "minivan", "state_number": "\u0432072\u0442\u0440072", "type_engine": "electro", "child_seat": true, "power_reserve": "1", "rating": 1, "kind_car": "Passenger", "coordinates": 72}}, {"model": "cars.car", "pk": 73, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043e073\u0440\u0445073", "type_engine": "benzine", "child_seat": true, "power_reserve": "2", "rating": 2, "kind_car": "Passenger", "coordinates": 73}}, {"model": "cars.car", "pk": 74, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0443074\u0445\u0430074", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 3, "kind_car": "Cargo", "coordinates": 74}}, {"model": "cars.car", "pk": 75, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043e075\u043c\u0442075", "type_engine": "electro", "child_seat": false, "power_reserve": "0", "rating": 2, "kind_car": "Cargo", "coordinates": 75}}, {"model": "cars.car", "pk": 76, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0432076\u043e\u043c076", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 2, "kind_car": "Cargo", "coordinates": 76}}, {"model": "cars.car", "pk": 77, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0442077\u0443\u0440077", "type_engine": "benzine", "child_seat": false, "power_reserve": "2", "rating": 3, "kind_car": "Cargo", "coordinates": 77}}, {"model": "cars.car", "pk": 78, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0440078\u0442\u0441078", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 2, "kind_car": "Passenger", "coordinates": 78}}, {"model": "cars.car", "pk": 79, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0445079\u043a\u043d079", "type_engine": "electro", "child_seat": true, "power_reserve": "1", "rating": 1, "kind_car": "Cargo", "coordinates": 79}}, {"model": "cars.car", "pk": 80, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0443080\u0443\u043c080", "type_engine": "benzine", "child_seat": false, "power_reserve": "1", "rating": 4, "kind_car": "Cargo", "coordinates": 80}}, {"model": "cars.car", "pk": 81, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0445081\u0442\u043a081", "type_engine": "benzine", "child_seat": false, "power_reserve": "2", "rating": 3, "kind_car": "Passenger", "coordinates": 81}}, {"model": "cars.car", "pk": 82, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0441082\u0430\u043d082", "type_engine": "electro", "child_seat": true, "power_reserve": "1", "rating": 2, "kind_car": "Passenger", "coordinates": 82}}, {"model": "cars.car", "pk": 83, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0430083\u0432\u0432083", "type_engine": "electro", "child_seat": false, "power_reserve": "2", "rating": 2, "kind_car": "Passenger", "coordinates": 83}}, {"model": "cars.car", "pk": 84, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0442084\u0443\u0430084", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 2, "kind_car": "Passenger", "coordinates": 84}}, {"model": "cars.car", "pk": 85, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0430085\u0430\u043e085", "type_engine": "benzine", "child_seat": false, "power_reserve": "2", "rating": 3, "kind_car": "Passenger", "coordinates": 85}}, {"model": "cars.car", "pk": 86, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0445086\u043c\u0443086", "type_engine": "electro", "child_seat": true, "power_reserve": "1", "rating": 3, "kind_car": "Cargo", "coordinates": 86}}, {"model": "cars.car", "pk": 87, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0440087\u0443\u0432087", "type_engine": "benzine", "child_seat": false, "power_reserve": "2", "rating": 1, "kind_car": "Passenger", "coordinates": 87}}, {"model": "cars.car", "pk": 88, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u043a088\u043c\u0432088", "type_engine": "benzine", "child_seat": true, "power_reserve": "0", "rating": 3, "kind_car": "Cargo", "coordinates": 88}}, {"model": "cars.car", "pk": 89, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u043d089\u043e\u0445089", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 1, "kind_car": "Cargo", "coordinates": 89}}, {"model": "cars.car", "pk": 90, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "minivan", "state_number": "\u0442090\u043e\u0432090", "type_engine": "electro", "child_seat": true, "power_reserve": "1", "rating": 1, "kind_car": "Cargo", "coordinates": 90}}, {"model": "cars.car", "pk": 91, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "KIA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0443091\u043e\u0432091", "type_engine": "electro", "child_seat": false, "power_reserve": "0", "rating": 4, "kind_car": "Passenger", "coordinates": 91}}, {"model": "cars.car", "pk": 92, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "KIA", "model": "MODEL", "type_car": "minivan", "state_number": "\u0435092\u043a\u043a092", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 1, "kind_car": "Cargo", "coordinates": 92}}, {"model": "cars.car", "pk": 93, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0435093\u0445\u043d093", "type_engine": "electro", "child_seat": false, "power_reserve": "2", "rating": 1, "kind_car": "Passenger", "coordinates": 93}}, {"model": "cars.car", "pk": 94, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u043d094\u043c\u0440094", "type_engine": "electro", "child_seat": false, "power_reserve": "2", "rating": 2, "kind_car": "Passenger", "coordinates": 94}}, {"model": "cars.car", "pk": 95, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "BelkaCar", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0435095\u0435\u0445095", "type_engine": "benzine", "child_seat": true, "power_reserve": "1", "rating": 1, "kind_car": "Cargo", "coordinates": 95}}, {"model": "cars.car", "pk": 96, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "LADA", "model": "MODEL", "type_car": "sedan", "state_number": "\u0441096\u043c\u0442096", "type_engine": "electro", "child_seat": false, "power_reserve": "1", "rating": 3, "kind_car": "Cargo", "coordinates": 96}}, {"model": "cars.car", "pk": 97, "fields": {"is_available": true, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "LADA", "model": "MODEL", "type_car": "hatchback", "state_number": "\u0445097\u043c\u043d097", "type_engine": "benzine", "child_seat": false, "power_reserve": "0", "rating": 1, "kind_car": "Cargo", "coordinates": 97}}, {"model": "cars.car", "pk": 98, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u0441098\u0435\u0435098", "type_engine": "benzine", "child_seat": false, "power_reserve": "1", "rating": 2, "kind_car": "Passenger", "coordinates": 98}}, {"model": "cars.car", "pk": 99, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "CityDrive", "brand": "BMW", "model": "MODEL", "type_car": "sedan", "state_number": "\u043e099\u0435\u043a099", "type_engine": "electro", "child_seat": false, "power_reserve": "2", "rating": 1, "kind_car": "Passenger", "coordinates": 99}}, {"model": "cars.car", "pk": 100, "fields": {"is_available": false, "image": "default_image/default_car.png", "company": "YandexDrive", "brand": "BMW", "model": "MODEL", "type_car": "hatchback", "state_number": "\u043e100\u0445\u0435100", "type_engine": "electro", "child_seat": true, "power_reserve": "1", "rating": 2, "kind_car": "Cargo", "coordinates": 100}}, {"model": "cars.coordinatescar", "pk": 1, "fields": {"latitude": 37.610837, "longitude": 55.581636}}, {"model": "cars.coordinatescar", "pk": 2, "fields": {"latitude": 37.787708, "longitude": 55.862803}}, {"model": "cars.coordinatescar", "pk": 3, "fields": {"latitude": 37.66523, "longitude": 55.793854}}, {"model": "cars.coordinatescar", "pk": 4, "fields": {"latitude": 37.437561, "longitude": 55.710429}}, {"model": "cars.coordinatescar", "pk": 5, "fields": {"latitude": 37.640952, "longitude": 55.668435}}, {"model": "cars.coordinatescar", "pk": 6, "fields": {"latitude": 37.684961, "longitude": 55.622132}}, {"model": "cars.coordinatescar", "pk": 7, "fields": {"latitude": 37.564085, "longitude": 55.70131}}, {"model": "cars.coordinatescar", "pk": 8, "fields": {"latitude": 37.640057, "longitude": 55.824188}}, {"model": "cars.coordinatescar", "pk": 9, "fields": {"latitude": 37.538501, "longitude": 55.587481}}, {"model": "cars.coordinatescar", "pk": 10, "fields": {"latitude": 37.461241, "longitude": 55.751552}}, {"model": "cars.coordinatescar", "pk": 11, "fields": {"latitude": 37.54955, "longitude": 55.856074}}, {"model": "cars.coordinatescar", "pk": 12, "fields": {"latitude": 37.804774, "longitude": 55.838125}}, {"model": "cars.coordinatescar", "pk": 13, "fields": {"latitude": 37.655502, "longitude": 55.805843}}, {"model": "cars.coordinatescar", "pk": 14, "fields": {"latitude": 37.730295, "longitude": 55.811445}}, {"model": "cars.coordinatescar", "pk": 15, "fields": {"latitude": 37.596887, "longitude": 55.603625}}, {"model": "cars.coordinatescar", "pk": 16, "fields": {"latitude": 37.453405, "longitude": 55.864755}}, {"model": "cars.coordinatescar", "pk": 17, "fields": {"latitude": 37.607897, "longitude": 55.798193}}, {"model": "cars.coordinatescar", "pk": 18, "fields": {"latitude": 37.474855, "longitude": 55.802896}}, {"model": "cars.coordinatescar", "pk": 19, "fields": {"latitude": 37.704483, "longitude": 55.831358}}, {"model": "cars.coordinatescar", "pk": 20, "fields": {"latitude": 37.660251, "longitude": 55.755224}}, {"model": "cars.coordinatescar", "pk": 21, "fields": {"latitude": 37.751377, "longitude": 55.650406}}, {"model": "cars.coordinatescar", "pk": 22, "fields": {"latitude": 37.574923, "longitude": 55.690564}}, {"model": "cars.coordinatescar", "pk": 23, "fields": {"latitude": 37.445617, "longitude": 55.671177}}, {"model": "cars.coordinatescar", "pk": 24, "fields": {"latitude": 37.750671, "longitude": 55.903478}}, {"model": "cars.coordinatescar", "pk": 25, "fields": {"latitude": 37.624418, "longitude": 55.729808}}, {"model": "cars.coordinatescar", "pk": 26, "fields": {"latitude": 37.70184, "longitude": 55.581962}}, {"model": "cars.coordinatescar", "pk": 27, "fields": {"latitude": 37.673537, "longitude": 55.634594}}, {"model": "cars.coordinatescar", "pk": 28, "fields": {"latitude": 37.640802, "longitude": 55.755676}}, {"model": "cars.coordinatescar", "pk": 29, "fields": {"latitude": 37.827653, "longitude": 55.810753}}, {"model": "cars.coordinatescar", "pk": 30, "fields": {"latitude": 37.748716, "longitude": 55.893808}}, {"model": "cars.coordinatescar", "pk": 31, "fields": {"latitude": 37.83638, "longitude": 55.71669}}, {"model": "cars.coordinatescar", "pk": 32, "fields": {"latitude": 37.420988, "longitude": 55.86267}}, {"model": "cars.coordinatescar", "pk": 33, "fields": {"latitude": 37.507007, "longitude": 55.587313}}, {"model": "cars.coordinatescar", "pk": 34, "fields": {"latitude": 37.842773, "longitude": 55.617608}}, {"model": "cars.coordinatescar", "pk": 35, "fields": {"latitude": 37.446288, "longitude": 55.620728}}, {"model": "cars.coordinatescar", "pk": 36, "fields": {"latitude": 37.544615, "longitude": 55.837711}}, {"model": "cars.coordinatescar", "pk": 37, "fields": {"latitude": 37.440186, "longitude": 55.700375}}, {"model": "cars.coordinatescar", "pk": 38, "fields": {"latitude": 37.425316, "longitude": 55.695984}}, {"model": "cars.coordinatescar", "pk": 39, "fields": {"latitude": 37.645303, "longitude": 55.74686}}, {"model": "cars.coordinatescar", "pk": 40, "fields": {"latitude": 37.785412, "longitude": 55.650547}}, {"model": "cars.coordinatescar", "pk": 41, "fields": {"latitude": 37.417512, "longitude": 55.719384}}, {"model": "cars.coordinatescar", "pk": 42, "fields": {"latitude": 37.811934, "longitude": 55.700967}}, {"model": "cars.coordinatescar", "pk": 43, "fields": {"latitude": 37.611627, "longitude": 55.634634}}, {"model": "cars.coordinatescar", "pk": 44, "fields": {"latitude": 37.693634, "longitude": 55.662252}}, {"model": "cars.coordinatescar", "pk": 45, "fields": {"latitude": 37.717543, "longitude": 55.619222}}, {"model": "cars.coordinatescar", "pk": 46, "fields": {"latitude": 37.646201, "longitude": 55.883502}}, {"model": "cars.coordinatescar", "pk": 47, "fields": {"latitude": 37.555936, "longitude": 55.885809}}, {"model": "cars.coordinatescar", "pk": 48, "fields": {"latitude": 37.524943, "longitude": 55.794103}}, {"model": "cars.coordinatescar", "pk": 49, "fields": {"latitude": 37.666809, "longitude": 55.708999}}, {"model": "cars.coordinatescar", "pk": 50, "fields": {"latitude": 37.682569, "longitude": 55.780095}}, {"model": "cars.coordinatescar", "pk": 51, "fields": {"latitude": 37.429307, "longitude": 55.677332}}, {"model": "cars.coordinatescar", "pk": 52, "fields": {"latitude": 37.755516, "longitude": 55.634949}}, {"model": "cars.coordinatescar", "pk": 53, "fields": {"latitude": 37.702408, "longitude": 55.790519}}, {"model": "cars.coordinatescar", "pk": 54, "fields": {"latitude": 37.843097, "longitude": 55.710032}}, {"model": "cars.coordinatescar", "pk": 55, "fields": {"latitude": 37.672316, "longitude": 55.670699}}, {"model": "cars.coordinatescar", "pk": 56, "fields": {"latitude": 37.752472, "longitude": 55.726278}}, {"model": "cars.coordinatescar", "pk": 57, "fields": {"latitude": 37.641707, "longitude": 55.900458}}, {"model": "cars.coordinatescar", "pk": 58, "fields": {"latitude": 37.848686, "longitude": 55.868325}}, {"model": "cars.coordinatescar", "pk": 59, "fields": {"latitude": 37.835645, "longitude": 55.884801}}, {"model": "cars.coordinatescar", "pk": 60, "fields": {"latitude": 37.494229, "longitude": 55.811399}}, {"model": "cars.coordinatescar", "pk": 61, "fields": {"latitude": 37.406847, "longitude": 55.588236}}, {"model": "cars.coordinatescar", "pk": 62, "fields": {"latitude": 37.534581, "longitude": 55.630662}}, {"model": "cars.coordinatescar", "pk": 63, "fields": {"latitude": 37.597968, "longitude": 55.627784}}, {"model": "cars.coordinatescar", "pk": 64, "fields": {"latitude": 37.480745, "longitude": 55.877903}}, {"model": "cars.coordinatescar", "pk": 65, "fields": {"latitude": 37.423662, "longitude": 55.744319}}, {"model": "cars.coordinatescar", "pk": 66, "fields": {"latitude": 37.380485, "longitude": 55.629867}}, {"model": "cars.coordinatescar", "pk": 67, "fields": {"latitude": 37.557705, "longitude": 55.682351}}, {"model": "cars.coordinatescar", "pk": 68, "fields": {"latitude": 37.385882, "longitude": 55.579676}}, {"model": "cars.coordinatescar", "pk": 69, "fields": {"latitude": 37.512977, "longitude": 55.637702}}, {"model": "cars.coordinatescar", "pk": 70, "fields": {"latitude": 37.836661, "longitude": 55.895941}}, {"model": "cars.coordinatescar", "pk": 71, "fields": {"latitude": 37.709018, "longitude": 55.672553}}, {"model": "cars.coordinatescar", "pk": 72, "fields": {"latitude": 37.77823, "longitude": 55.780315}}, {"model": "cars.coordinatescar", "pk": 73, "fields": {"latitude": 37.52593, "longitude": 55.895893}}, {"model": "cars.coordinatescar", "pk": 74, "fields": {"latitude": 37.439896, "longitude": 55.589299}}, {"model": "cars.coordinatescar", "pk": 75, "fields": {"latitude": 37.725764, "longitude": 55.635019}}, {"model": "cars.coordinatescar", "pk": 76, "fields": {"latitude": 37.696248, "longitude": 55.708495}}, {"model": "cars.coordinatescar", "pk": 77, "fields": {"latitude": 37.73552, "longitude": 55.632538}}, {"model": "cars.coordinatescar", "pk": 78, "fields": {"latitude": 37.595721, "longitude": 55.601912}}, {"model": "cars.coordinatescar", "pk": 79, "fields": {"latitude": 37.824531, "longitude": 55.866824}}, {"model": "cars.coordinatescar", "pk": 80, "fields": {"latitude": 37.611649, "longitude": 55.674521}}, {"model": "cars.coordinatescar", "pk": 81, "fields": {"latitude": 37.505392, "longitude": 55.894089}}, {"model": "cars.coordinatescar", "pk": 82, "fields": {"latitude": 37.474525, "longitude": 55.580539}}, {"model": "cars.coordinatescar", "pk": 83, "fields": {"latitude": 37.743974, "longitude": 55.790026}}, {"model": "cars.coordinatescar", "pk": 84, "fields": {"latitude": 37.58131, "longitude": 55.659103}}, {"model": "cars.coordinatescar", "pk": 85, "fields": {"latitude": 37.596376, "longitude": 55.65846}}, {"model": "cars.coordinatescar", "pk": 86, "fields": {"latitude": 37.600261, "longitude": 55.654779}}, {"model": "cars.coordinatescar", "pk": 87, "fields": {"latitude": 37.565383, "longitude": 55.802159}}, {"model": "cars.coordinatescar", "pk": 88, "fields": {"latitude": 37.834764, "longitude": 55.62867}}, {"model": "cars.coordinatescar", "pk": 89, "fields": {"latitude": 37.442313, "longitude": 55.708597}}, {"model": "cars.coordinatescar", "pk": 90, "fields": {"latitude": 37.819915, "longitude": 55.730346}}, {"model": "cars.coordinatescar", "pk": 91, "fields": {"latitude": 37.713867, "longitude": 55.719354}}, {"model": "cars.coordinatescar", "pk": 92, "fields": {"latitude": 37.599512, "longitude": 55.894906}}, {"model": "cars.coordinatescar", "pk": 93, "fields": {"latitude": 37.486189, "longitude": 55.82995}}, {"model": "cars.coordinatescar", "pk": 94, "fields": {"latitude": 37.730414, "longitude": 55.575826}}, {"model": "cars.coordinatescar", "pk": 95, "fields": {"latitude": 37.575883, "longitude": 55.796945}}, {"model": "cars.coordinatescar", "pk": 96, "fields": {"latitude": 37.664114, "longitude": 55.602582}}, {"model": "cars.coordinatescar", "pk": 97, "fields": {"latitude": 37.661299, "longitude": 55.639681}}, {"model": "cars.coordinatescar", "pk": 98, "fields": {"latitude": 37.562339, "longitude": 55.579319}}, {"model": "cars.coordinatescar", "pk": 99, "fields": {"latitude": 37.482893, "longitude": 55.626693}}, {"model": "cars.coordinatescar", "pk": 100, "fields": {"latitude": 37.668728, "longitude": 55.615154}}]
+[
+  {
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+      "coordinates": 1,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "о001вс001",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+      "coordinates": 2,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "м002св002",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+      "coordinates": 3,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "т003ух003",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+      "coordinates": 4,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "р004ах004",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 5,
+    "fields": {
+      "coordinates": 5,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "у005мн005",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 6,
+    "fields": {
+      "coordinates": 6,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "о006ах006",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 7,
+    "fields": {
+      "coordinates": 7,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "с007км007",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 8,
+    "fields": {
+      "coordinates": 8,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "у008тс008",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 9,
+    "fields": {
+      "coordinates": 9,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "н009рс009",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 10,
+    "fields": {
+      "coordinates": 10,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "в010хн010",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 11,
+    "fields": {
+      "coordinates": 11,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "с011мн011",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 12,
+    "fields": {
+      "coordinates": 12,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "р012рк012",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 13,
+    "fields": {
+      "coordinates": 13,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "м013ау013",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 14,
+    "fields": {
+      "coordinates": 14,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "у014ко014",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 15,
+    "fields": {
+      "coordinates": 15,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "т015во015",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 16,
+    "fields": {
+      "coordinates": 16,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "р016тн016",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 17,
+    "fields": {
+      "coordinates": 17,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "в017ух017",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 18,
+    "fields": {
+      "coordinates": 18,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "е018рк018",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 19,
+    "fields": {
+      "coordinates": 19,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "у019вв019",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 20,
+    "fields": {
+      "coordinates": 20,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "а020хе020",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 21,
+    "fields": {
+      "coordinates": 21,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "в021вк021",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 22,
+    "fields": {
+      "coordinates": 22,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "у022ау022",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 23,
+    "fields": {
+      "coordinates": 23,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "у023ме023",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 24,
+    "fields": {
+      "coordinates": 24,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "к024ас024",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 25,
+    "fields": {
+      "coordinates": 25,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "х025нт025",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 26,
+    "fields": {
+      "coordinates": 26,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "а026ев026",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 27,
+    "fields": {
+      "coordinates": 27,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "у027ах027",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 28,
+    "fields": {
+      "coordinates": 28,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "о028ау028",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 29,
+    "fields": {
+      "coordinates": 29,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "т029ке029",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 30,
+    "fields": {
+      "coordinates": 30,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "р030хк030",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 31,
+    "fields": {
+      "coordinates": 31,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "х031ме031",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 32,
+    "fields": {
+      "coordinates": 32,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "р032ха032",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 33,
+    "fields": {
+      "coordinates": 33,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "у033мс033",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 34,
+    "fields": {
+      "coordinates": 34,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "е034хт034",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 35,
+    "fields": {
+      "coordinates": 35,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "р035ке035",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 36,
+    "fields": {
+      "coordinates": 36,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "к036ер036",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 37,
+    "fields": {
+      "coordinates": 37,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "х037ау037",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 38,
+    "fields": {
+      "coordinates": 38,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "к038мк038",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 39,
+    "fields": {
+      "coordinates": 39,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "о039ун039",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 40,
+    "fields": {
+      "coordinates": 40,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "х040не040",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 41,
+    "fields": {
+      "coordinates": 41,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "х041ту041",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 42,
+    "fields": {
+      "coordinates": 42,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "с042ес042",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 43,
+    "fields": {
+      "coordinates": 43,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "н043нв043",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 44,
+    "fields": {
+      "coordinates": 44,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "т044ам044",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 45,
+    "fields": {
+      "coordinates": 45,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "о045ан045",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 46,
+    "fields": {
+      "coordinates": 46,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "т046мо046",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 47,
+    "fields": {
+      "coordinates": 47,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "в047мр047",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 48,
+    "fields": {
+      "coordinates": 48,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "а048ру048",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 49,
+    "fields": {
+      "coordinates": 49,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "р049тк049",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 50,
+    "fields": {
+      "coordinates": 50,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "а050ар050",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 51,
+    "fields": {
+      "coordinates": 51,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "а051нк051",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 52,
+    "fields": {
+      "coordinates": 52,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "о052тс052",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 53,
+    "fields": {
+      "coordinates": 53,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "н053ск053",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 54,
+    "fields": {
+      "coordinates": 54,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "е054хк054",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 55,
+    "fields": {
+      "coordinates": 55,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "х055ет055",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 56,
+    "fields": {
+      "coordinates": 56,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "х056та056",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 57,
+    "fields": {
+      "coordinates": 57,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "х057рс057",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 58,
+    "fields": {
+      "coordinates": 58,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "к058нх058",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 59,
+    "fields": {
+      "coordinates": 59,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "х059ар059",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 60,
+    "fields": {
+      "coordinates": 60,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "е060тв060",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 61,
+    "fields": {
+      "coordinates": 61,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "в061рт061",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 62,
+    "fields": {
+      "coordinates": 62,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "т062ме062",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 63,
+    "fields": {
+      "coordinates": 63,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "а063ху063",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 64,
+    "fields": {
+      "coordinates": 64,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "р064хе064",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 65,
+    "fields": {
+      "coordinates": 65,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "у065ов065",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 66,
+    "fields": {
+      "coordinates": 66,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "с066тс066",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 67,
+    "fields": {
+      "coordinates": 67,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "х067мр067",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 68,
+    "fields": {
+      "coordinates": 68,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "м068те068",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 69,
+    "fields": {
+      "coordinates": 69,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "у069кх069",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 70,
+    "fields": {
+      "coordinates": 70,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "е070рк070",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 71,
+    "fields": {
+      "coordinates": 71,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "м071уу071",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 72,
+    "fields": {
+      "coordinates": 72,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "р072ес072",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 73,
+    "fields": {
+      "coordinates": 73,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "х073ка073",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 74,
+    "fields": {
+      "coordinates": 74,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "в074нм074",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 3,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 75,
+    "fields": {
+      "coordinates": 75,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "е075хр075",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 76,
+    "fields": {
+      "coordinates": 76,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "х076ра076",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 77,
+    "fields": {
+      "coordinates": 77,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "х077вн077",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 4,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 78,
+    "fields": {
+      "coordinates": 78,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "е078вм078",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 79,
+    "fields": {
+      "coordinates": 79,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "о079ка079",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 80,
+    "fields": {
+      "coordinates": 80,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "х080ур080",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 81,
+    "fields": {
+      "coordinates": 81,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "YandexDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "с081ва081",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 82,
+    "fields": {
+      "coordinates": 82,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "о082ах082",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 83,
+    "fields": {
+      "coordinates": 83,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "sedan",
+      "state_number": "е083вр083",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 84,
+    "fields": {
+      "coordinates": 84,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "о084оа084",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 85,
+    "fields": {
+      "coordinates": 85,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "о085ен085",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 86,
+    "fields": {
+      "coordinates": 86,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "к086нк086",
+      "type_engine": "electro",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 87,
+    "fields": {
+      "coordinates": 87,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "т087еу087",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 88,
+    "fields": {
+      "coordinates": 88,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "к088мм088",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 89,
+    "fields": {
+      "coordinates": 89,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "е089кх089",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 2,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 90,
+    "fields": {
+      "coordinates": 90,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "kupe",
+      "state_number": "е090хс090",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 91,
+    "fields": {
+      "coordinates": 91,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "т091мн091",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 92,
+    "fields": {
+      "coordinates": 92,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "в092ое092",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 2,
+      "kind_car": "Passenger",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 93,
+    "fields": {
+      "coordinates": 93,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "к093хт093",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 1,
+      "kind_car": "Passenger",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 94,
+    "fields": {
+      "coordinates": 94,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "т094тс094",
+      "type_engine": "benzine",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": []
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 95,
+    "fields": {
+      "coordinates": 95,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "YandexDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "к095км095",
+      "type_engine": "electro",
+      "power_reserve": "2",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 96,
+    "fields": {
+      "coordinates": 96,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "у096уе096",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 97,
+    "fields": {
+      "coordinates": 97,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "BMW",
+      "model": "MODEL",
+      "type_car": "hatchback",
+      "state_number": "н097ус097",
+      "type_engine": "benzine",
+      "power_reserve": "2",
+      "rating": 4,
+      "kind_car": "Passenger",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 98,
+    "fields": {
+      "coordinates": 98,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "CityDrive",
+      "brand": "LADA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "о098му098",
+      "type_engine": "benzine",
+      "power_reserve": "0",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 99,
+    "fields": {
+      "coordinates": 99,
+      "image": "default_image/default_car.png",
+      "is_available": false,
+      "company": "BelkaCar",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "universak",
+      "state_number": "с099ео099",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 3,
+      "kind_car": "Cargo",
+      "various": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 100,
+    "fields": {
+      "coordinates": 100,
+      "image": "default_image/default_car.png",
+      "is_available": true,
+      "company": "CityDrive",
+      "brand": "KIA",
+      "model": "MODEL",
+      "type_car": "minivan",
+      "state_number": "с100ур100",
+      "type_engine": "electro",
+      "power_reserve": "1",
+      "rating": 1,
+      "kind_car": "Cargo",
+      "various": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 1,
+    "fields": {
+      "latitude": 55.812679,
+      "longitude": 37.721086
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 2,
+    "fields": {
+      "latitude": 55.601741,
+      "longitude": 37.49121
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 3,
+    "fields": {
+      "latitude": 55.622406,
+      "longitude": 37.631466
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 4,
+    "fields": {
+      "latitude": 55.725416,
+      "longitude": 37.633785
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 5,
+    "fields": {
+      "latitude": 55.843024,
+      "longitude": 37.642346
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 6,
+    "fields": {
+      "latitude": 55.668771,
+      "longitude": 37.746209
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 7,
+    "fields": {
+      "latitude": 55.623158,
+      "longitude": 37.492313
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 8,
+    "fields": {
+      "latitude": 55.836322,
+      "longitude": 37.772655
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 9,
+    "fields": {
+      "latitude": 55.779501,
+      "longitude": 37.79872
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 10,
+    "fields": {
+      "latitude": 55.841489,
+      "longitude": 37.764426
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 11,
+    "fields": {
+      "latitude": 55.704675,
+      "longitude": 37.615471
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 12,
+    "fields": {
+      "latitude": 55.883877,
+      "longitude": 37.77227
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 13,
+    "fields": {
+      "latitude": 55.708071,
+      "longitude": 37.860193
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 14,
+    "fields": {
+      "latitude": 55.589489,
+      "longitude": 37.543808
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 15,
+    "fields": {
+      "latitude": 55.583813,
+      "longitude": 37.792594
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 16,
+    "fields": {
+      "latitude": 55.746629,
+      "longitude": 37.379251
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 17,
+    "fields": {
+      "latitude": 55.89256,
+      "longitude": 37.418961
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 18,
+    "fields": {
+      "latitude": 55.891118,
+      "longitude": 37.683453
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 19,
+    "fields": {
+      "latitude": 55.781794,
+      "longitude": 37.679451
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 20,
+    "fields": {
+      "latitude": 55.711359,
+      "longitude": 37.714897
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 21,
+    "fields": {
+      "latitude": 55.669487,
+      "longitude": 37.79168
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 22,
+    "fields": {
+      "latitude": 55.871484,
+      "longitude": 37.799365
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 23,
+    "fields": {
+      "latitude": 55.598609,
+      "longitude": 37.659405
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 24,
+    "fields": {
+      "latitude": 55.682769,
+      "longitude": 37.487416
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 25,
+    "fields": {
+      "latitude": 55.622703,
+      "longitude": 37.714412
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 26,
+    "fields": {
+      "latitude": 55.759807,
+      "longitude": 37.414276
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 27,
+    "fields": {
+      "latitude": 55.692668,
+      "longitude": 37.852328
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 28,
+    "fields": {
+      "latitude": 55.744076,
+      "longitude": 37.706756
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 29,
+    "fields": {
+      "latitude": 55.873524,
+      "longitude": 37.544964
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 30,
+    "fields": {
+      "latitude": 55.718084,
+      "longitude": 37.495977
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 31,
+    "fields": {
+      "latitude": 55.820195,
+      "longitude": 37.475145
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 32,
+    "fields": {
+      "latitude": 55.605391,
+      "longitude": 37.576275
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 33,
+    "fields": {
+      "latitude": 55.666642,
+      "longitude": 37.465273
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 34,
+    "fields": {
+      "latitude": 55.608702,
+      "longitude": 37.76869
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 35,
+    "fields": {
+      "latitude": 55.687549,
+      "longitude": 37.537248
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 36,
+    "fields": {
+      "latitude": 55.578765,
+      "longitude": 37.818474
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 37,
+    "fields": {
+      "latitude": 55.755826,
+      "longitude": 37.631796
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 38,
+    "fields": {
+      "latitude": 55.866353,
+      "longitude": 37.546066
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 39,
+    "fields": {
+      "latitude": 55.770388,
+      "longitude": 37.662056
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 40,
+    "fields": {
+      "latitude": 55.735192,
+      "longitude": 37.569534
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 41,
+    "fields": {
+      "latitude": 55.812983,
+      "longitude": 37.550532
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 42,
+    "fields": {
+      "latitude": 55.873635,
+      "longitude": 37.701754
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 43,
+    "fields": {
+      "latitude": 55.806132,
+      "longitude": 37.747397
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 44,
+    "fields": {
+      "latitude": 55.767893,
+      "longitude": 37.447543
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 45,
+    "fields": {
+      "latitude": 55.658496,
+      "longitude": 37.71251
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 46,
+    "fields": {
+      "latitude": 55.76737,
+      "longitude": 37.410584
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 47,
+    "fields": {
+      "latitude": 55.836999,
+      "longitude": 37.479176
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 48,
+    "fields": {
+      "latitude": 55.841654,
+      "longitude": 37.806878
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 49,
+    "fields": {
+      "latitude": 55.733474,
+      "longitude": 37.742807
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 50,
+    "fields": {
+      "latitude": 55.748576,
+      "longitude": 37.415005
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 51,
+    "fields": {
+      "latitude": 55.860023,
+      "longitude": 37.51854
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 52,
+    "fields": {
+      "latitude": 55.680695,
+      "longitude": 37.579776
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 53,
+    "fields": {
+      "latitude": 55.785225,
+      "longitude": 37.633203
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 54,
+    "fields": {
+      "latitude": 55.673669,
+      "longitude": 37.55297
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 55,
+    "fields": {
+      "latitude": 55.639022,
+      "longitude": 37.664317
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 56,
+    "fields": {
+      "latitude": 55.879758,
+      "longitude": 37.799703
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 57,
+    "fields": {
+      "latitude": 55.79412,
+      "longitude": 37.592231
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 58,
+    "fields": {
+      "latitude": 55.814616,
+      "longitude": 37.840113
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 59,
+    "fields": {
+      "latitude": 55.889438,
+      "longitude": 37.483613
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 60,
+    "fields": {
+      "latitude": 55.776983,
+      "longitude": 37.79556
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 61,
+    "fields": {
+      "latitude": 55.786322,
+      "longitude": 37.678614
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 62,
+    "fields": {
+      "latitude": 55.594997,
+      "longitude": 37.616611
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 63,
+    "fields": {
+      "latitude": 55.881698,
+      "longitude": 37.822138
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 64,
+    "fields": {
+      "latitude": 55.674235,
+      "longitude": 37.486383
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 65,
+    "fields": {
+      "latitude": 55.681294,
+      "longitude": 37.439724
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 66,
+    "fields": {
+      "latitude": 55.658337,
+      "longitude": 37.416824
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 67,
+    "fields": {
+      "latitude": 55.767488,
+      "longitude": 37.595662
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 68,
+    "fields": {
+      "latitude": 55.891538,
+      "longitude": 37.731442
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 69,
+    "fields": {
+      "latitude": 55.629155,
+      "longitude": 37.627492
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 70,
+    "fields": {
+      "latitude": 55.821915,
+      "longitude": 37.52012
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 71,
+    "fields": {
+      "latitude": 55.772504,
+      "longitude": 37.769565
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 72,
+    "fields": {
+      "latitude": 55.694066,
+      "longitude": 37.42707
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 73,
+    "fields": {
+      "latitude": 55.59854,
+      "longitude": 37.756175
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 74,
+    "fields": {
+      "latitude": 55.773291,
+      "longitude": 37.609337
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 75,
+    "fields": {
+      "latitude": 55.849658,
+      "longitude": 37.44755
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 76,
+    "fields": {
+      "latitude": 55.7406,
+      "longitude": 37.51578
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 77,
+    "fields": {
+      "latitude": 55.763561,
+      "longitude": 37.519145
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 78,
+    "fields": {
+      "latitude": 55.79612,
+      "longitude": 37.567457
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 79,
+    "fields": {
+      "latitude": 55.693992,
+      "longitude": 37.730083
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 80,
+    "fields": {
+      "latitude": 55.691942,
+      "longitude": 37.748099
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 81,
+    "fields": {
+      "latitude": 55.839989,
+      "longitude": 37.469286
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 82,
+    "fields": {
+      "latitude": 55.796241,
+      "longitude": 37.479485
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 83,
+    "fields": {
+      "latitude": 55.890321,
+      "longitude": 37.751205
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 84,
+    "fields": {
+      "latitude": 55.633229,
+      "longitude": 37.721835
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 85,
+    "fields": {
+      "latitude": 55.62517,
+      "longitude": 37.442523
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 86,
+    "fields": {
+      "latitude": 55.625839,
+      "longitude": 37.618207
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 87,
+    "fields": {
+      "latitude": 55.792277,
+      "longitude": 37.825883
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 88,
+    "fields": {
+      "latitude": 55.644179,
+      "longitude": 37.529188
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 89,
+    "fields": {
+      "latitude": 55.874341,
+      "longitude": 37.450086
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 90,
+    "fields": {
+      "latitude": 55.784545,
+      "longitude": 37.804711
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 91,
+    "fields": {
+      "latitude": 55.810413,
+      "longitude": 37.556584
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 92,
+    "fields": {
+      "latitude": 55.854924,
+      "longitude": 37.434587
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 93,
+    "fields": {
+      "latitude": 55.751217,
+      "longitude": 37.819737
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 94,
+    "fields": {
+      "latitude": 55.790394,
+      "longitude": 37.460755
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 95,
+    "fields": {
+      "latitude": 55.66375,
+      "longitude": 37.580648
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 96,
+    "fields": {
+      "latitude": 55.799223,
+      "longitude": 37.848891
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 97,
+    "fields": {
+      "latitude": 55.618643,
+      "longitude": 37.696878
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 98,
+    "fields": {
+      "latitude": 55.651271,
+      "longitude": 37.411504
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 99,
+    "fields": {
+      "latitude": 55.628608,
+      "longitude": 37.758828
+    }
+  },
+  {
+    "model": "cars.coordinatescar",
+    "pk": 100,
+    "fields": {
+      "latitude": 55.891316,
+      "longitude": 37.483747
+    }
+  },
+  {
+    "model": "cars.carvarious",
+    "pk": 1,
+    "fields": {
+      "name": "Детское кресло",
+      "slug": "child_seat"
+    }
+  },
+  {
+    "model": "cars.carvarious",
+    "pk": 2,
+    "fields": {
+      "name": "Подогрев руля",
+      "slug": "heated_steering_wheel"
+    }
+  },
+  {
+    "model": "cars.carvarious",
+    "pk": 3,
+    "fields": {
+      "name": "Удаленный подогрев",
+      "slug": "remote_heating"
+    }
+  },
+  {
+    "model": "cars.carvarious",
+    "pk": 4,
+    "fields": {
+      "name": "Без оклейки",
+      "slug": "without_pasting"
+    }
+  },
+  {
+    "model": "cars.carvarious",
+    "pk": 5,
+    "fields": {
+      "name": "Лопата",
+      "slug": "shovel"
+    }
+  },
+  {
+    "model": "cars.carvarious",
+    "pk": 6,
+    "fields": {
+      "name": "Для большой компании",
+      "slug": "for_big_company"
+    }
+  }
+]

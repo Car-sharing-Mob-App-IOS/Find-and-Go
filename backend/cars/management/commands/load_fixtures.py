@@ -7,6 +7,7 @@ from django.core.serializers.base import DeserializationError
 
 class Command(BaseCommand):
     file_paths = [
+        os.path.join("cars/data", "car_various.json"),
         os.path.join("cars/data", "cars.json"),
     ]
 
