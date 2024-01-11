@@ -66,3 +66,15 @@ class CarAdmin(admin.ModelAdmin):
             },
         ),
     )
+
+
+@admin.register(CarVarious)
+class CarVariousAdmin(admin.ModelAdmin):
+    list_display = [
+        "name",
+        "slug",
+    ]
+    search_fields = [
+        "latitude",
+        "longitude",
+    ]
