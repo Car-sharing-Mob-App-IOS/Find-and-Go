@@ -3,16 +3,11 @@ from core.utils import (generate_reset_code, get_attempts_word,
                         send_confirmation_code)
 from django.db.transaction import atomic
 from django.shortcuts import get_object_or_404
+from djoser.permissions import CurrentUserOrAdminOrReadOnly
 from djoser.views import TokenCreateView, TokenDestroyView
 from djoser.views import UserViewSet as DjoserUserViewSet
-from djoser.permissions import CurrentUserOrAdminOrReadOnly
-
-from drf_spectacular.utils import (
-    extend_schema,
-    extend_schema_view,
-    OpenApiExample,
-)
-
+from drf_spectacular.utils import (OpenApiExample, extend_schema,
+                                   extend_schema_view)
 from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.exceptions import ValidationError
@@ -20,20 +15,10 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import AllowAny, IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 
-from core.texts import MAX_RESET_ATTEMPTS
-from core.utils import (
-    generate_reset_code,
-    send_confirmation_code,
-    get_attempts_word,
-)
-
 from .models import User, UserCoordinates
-from .serializers import (
-    ResetCodeSerializer,
-    SetUserPasswordSerializer,
-    UserSerializer,
-    CoordinatesUserSerializer,
-)
+from .serializers import (CoordinatesUserSerializer, ResetCodeSerializer,
+                          SetUserPasswordSerializer, UserSerializer,
+                          UserTokenSerializer)
 
 
 @extend_schema(tags=["Пользователи"])
@@ -219,3 +204,30 @@ class PublicUserViewSet(DjoserUserViewSet):
                 {"error": "Произошла ошибка", "details": str(e)},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR,
             )
+
+
+@extend_schema(tags=["api"])
+@extend_schema_view(
+    post=extend_schema(
+        summary="Создание токена пользователя",
+        description="Токен пользователя можно получить только после создания.",
+        responses={
+            200: UserTokenSerializer,
+        }
+    )
+)
+class CustomTokenCreateView(TokenCreateView):
+    def post(self, request, *args, **kwargs):
+        return super().post(request, *args, **kwargs)
+
+
+@extend_schema(tags=["api"])
+@extend_schema_view(
+    post=extend_schema(
+        summary="Удаление токена пользователя",
+        description="Токен пользователя можно удалять после его создания."
+    )
+)
+class CustomTokenDestroyView(TokenDestroyView):
+    def post(self, request, *args, **kwargs):
+        return super().post(request, *args, **kwargs)
