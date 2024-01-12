@@ -3,7 +3,8 @@ from django.urls import include, path
 from drf_spectacular.views import SpectacularSwaggerView
 from rest_framework import routers
 from reviews.views import ReviewViewSet
-from users.views import PublicUserViewSet
+from users.views import (CustomTokenCreateView, CustomTokenDestroyView,
+                         PublicUserViewSet)
 
 from .router_settings import CustomDjoserUserRouter
 
@@ -23,7 +24,6 @@ router_v1.register("reviews", ReviewViewSet, "reviews")
 urlpatterns = [
     path("", include(router_v1.urls)),
     path("", include(user_router_v1.urls)),
-    path("auth/", include("djoser.urls.authtoken")),
     path("auth/", include("djoser.social.urls")),
     path("swagger/", SpectacularSwaggerView.as_view(), name="swagger"),
     path('auth/token/login/',
