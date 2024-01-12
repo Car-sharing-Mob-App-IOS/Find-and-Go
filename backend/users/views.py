@@ -1,6 +1,9 @@
+from core.texts import MAX_RESET_ATTEMPTS
+from core.utils import (generate_reset_code, get_attempts_word,
+                        send_confirmation_code)
 from django.db.transaction import atomic
 from django.shortcuts import get_object_or_404
-
+from djoser.views import TokenCreateView, TokenDestroyView
 from djoser.views import UserViewSet as DjoserUserViewSet
 from djoser.permissions import CurrentUserOrAdminOrReadOnly
 
