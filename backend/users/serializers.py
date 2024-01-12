@@ -62,3 +62,11 @@ class SetUserPasswordSerializer(serializers.Serializer):
         """
         validate_password(value)
         return value
+
+
+class UserTokenSerializer(serializers.Serializer):
+    """
+    Сериализатор для логина пользователя по токену.
+    """
+
+    auth_token = serializers.CharField()
