@@ -57,7 +57,7 @@ CAR_NAME_COMPANY_CHOICES = [
     ("BelkaCar", "BelkaCar"),
     ("YandexDrive", "ЯндексДрайв"),
     ("CityDrive", "Ситидрайв"),
-    ("DelyMobil", "Делимобиль"),
+    ("DeliMobil", "Делимобиль"),
 ]
 CAR_TYPE_ENGINE_CHOICES = [
     ("electro", "Электрический"),
@@ -66,15 +66,22 @@ CAR_TYPE_ENGINE_CHOICES = [
 CAR_TYPE_CAR_CHOICES = [
     ("sedan", "Седан"),
     ("hatchback", "Хэтчбек"),
-    ("universak", "Универсал"),
-    ("kupe", "Купе"),
+    ("universal", "Универсал"),
+    ("coupe", "Купе"),
     ("minivan", "Минивен"),
-    ("vnedorojnik", "Внедорожник"),
+    ("suv", "Внедороджник"),
 ]
 CAR_IS_AVAILABLE_CHOICES = [
     (True, "Да"),
     (False, "Нет"),
 ]
+
+CAR_POWER_RESERVE_CHOICES = [
+    ("full", "Полный бак"),
+    ("50km", "50 км"),
+    ("100km", "100 км"),
+]
+
 CAR_VARIOUS_CHOICES = [
     ("child_seat", "Детское кресло"),
     ("heated_steering_wheel", "Подогрев руля"),

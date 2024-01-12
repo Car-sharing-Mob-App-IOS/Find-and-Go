@@ -53,7 +53,6 @@ class CarAdmin(admin.ModelAdmin):
                 "fields": (
                     "various",
                     "type_engine",
-                    # "child_seat",
                     "power_reserve",
                     "rating",
                     "coordinates",
