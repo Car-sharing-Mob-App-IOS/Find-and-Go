@@ -26,4 +26,10 @@ urlpatterns = [
     path("auth/", include("djoser.urls.authtoken")),
     path("auth/", include("djoser.social.urls")),
     path("swagger/", SpectacularSwaggerView.as_view(), name="swagger"),
+    path('auth/token/login/',
+         CustomTokenCreateView.as_view(),
+         name='login'),
+    path('auth/token/logout/',
+         CustomTokenDestroyView.as_view(),
+         name='logout'),
 ]
