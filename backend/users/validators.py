@@ -1,12 +1,10 @@
-from django.core.validators import (
-    MinLengthValidator,
-    RegexValidator,
-)
+from django.core.validators import MinLengthValidator, RegexValidator
 
 
 def name_surname_validator(value, min_length=3):
+    """Validate name and surname."""
     validator = RegexValidator(
-        regex=r"^[a-zA-Zа-яА-Я]+$",
+        regex=r"^[a-zA-Zа-яА-Я\-\–]+$",  # Добавлены тире и дефис
         message=("Неверное значение, допускаются только буквы без пробелов."),
     )
     min_length_validator = MinLengthValidator(
