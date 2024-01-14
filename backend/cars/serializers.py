@@ -1,7 +1,11 @@
+from django.db.models import Avg
+
 from rest_framework import serializers
 
 from .validators import state_number_validate
 from .models import Car, CoordinatesCar, CarVarious
+
+from reviews.models import Review
 
 
 class CoordinatesCarSerializer(serializers.ModelSerializer):
@@ -10,14 +14,6 @@ class CoordinatesCarSerializer(serializers.ModelSerializer):
     class Meta:
         model = CoordinatesCar
         fields = ("latitude", "longitude")
-
-
-class CarVariousSerializer(serializers.ModelSerializer):
-    """Сериализатор для модели CarVarious."""
-
-    class Meta:
-        model = CarVarious
-        fields = ("id", "name", "slug")
 
 
 class CarSerializer(serializers.ModelSerializer):
@@ -29,7 +25,7 @@ class CarSerializer(serializers.ModelSerializer):
         slug_field="slug",
         queryset=CarVarious.objects.all(),
     )
-    # various = CarVariousSerializer(many=True)
+    rating = serializers.SerializerMethodField()
 
     class Meta:
         model = Car
@@ -44,9 +40,9 @@ class CarSerializer(serializers.ModelSerializer):
             "type_car",
             "state_number",
             "type_engine",
+            "rating",
             "various",
             "power_reserve",
-            "rating",
             "kind_car",
         ]
 
@@ -103,6 +99,13 @@ class CarSerializer(serializers.ModelSerializer):
     def to_representation(self, instance):
         """Преобразует объект Car в представление для API."""
         data = super().to_representation(instance)
-        data["rating"] = str(data["rating"])
+        data["rating"] = str(round(data["rating"], 2))
 
         return data
+
+    def get_rating(self, obj):
+        """Расчёт среднего значения рейтинга для машин."""
+
+        rating_avg = Review.objects.filter(car=obj).aggregate(Avg("rating"))
+
+        return rating_avg["rating__avg"] or 0
