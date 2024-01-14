@@ -16,7 +16,6 @@ from core.texts import (
     CAR_KIND_LABEL,
     CAR_MODEL_LABEL,
     CAR_POWER_RESERVE_LABEL,
-    CAR_RATING_LABEL,
     CAR_STATE_NUMBER_LABEL,
     CAR_TYPE_LABEL,
     CAR_VERBOSE_NAME,
@@ -28,7 +27,7 @@ from core.texts import (
     CAR_TYPE_CAR_CHOICES,
     CAR_TYPE_ENGINE_CHOICES,
     CAR_IS_AVAILABLE_CHOICES,
-    CAR_POWER_RESERVE_CHOICES
+    CAR_POWER_RESERVE_CHOICES,
 )
 
 from .utils import image_upload_to, resize_image
@@ -132,15 +131,6 @@ class Car(models.Model):
         CAR_POWER_RESERVE_LABEL,
         choices=CAR_POWER_RESERVE_CHOICES,
         max_length=30,
-    )
-    rating = models.DecimalField(
-        CAR_RATING_LABEL,
-        max_digits=3,
-        decimal_places=2,
-        validators=[
-            MinValueValidator(0.00),
-            MaxValueValidator(5.00),
-        ],
     )
     kind_car = models.CharField(
         CAR_KIND_LABEL,
