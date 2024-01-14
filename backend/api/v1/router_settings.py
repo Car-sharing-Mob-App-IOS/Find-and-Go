@@ -5,7 +5,7 @@ from rest_framework import routers
 EXCLUDED_ACTIONS = {
     # "users-list",
     "users-activation",
-    # "users-me",
+    "users-me",
     # "users-detail",
     "users-resend-activation",
     "users-set-password",
