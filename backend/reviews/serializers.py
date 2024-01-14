@@ -1,31 +1,31 @@
 from rest_framework import serializers
 
-from .utils import validate_score
+from .utils import validate_raiting
 from .models import Review
 
 
 class ReviewSerializer(serializers.ModelSerializer):
     """Сериализатор для модели Review."""
 
-    score = serializers.FloatField(validators=[validate_score])
+    rating = serializers.FloatField(validators=[validate_raiting])
 
     class Meta:
         model = Review
         fields = [
             "id",
-            "score",
             "user",
             "car",
+            "rating",
             "comment",
         ]
 
 
 class AddReviewSerializer(serializers.ModelSerializer):
-    score = serializers.FloatField(validators=[validate_score])
+    rating = serializers.FloatField(validators=[validate_raiting])
 
     class Meta:
         model = Review
         fields = [
-            "score",
+            "rating",
             "comment",
         ]

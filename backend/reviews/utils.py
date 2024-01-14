@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 
-def validate_score(value):
+def validate_raiting(value):
     """
     Проверка, что значение оценки находится
     в допустимом диапазоне [0, 5]
