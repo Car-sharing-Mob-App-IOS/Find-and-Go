@@ -9,13 +9,13 @@ class Review(admin.ModelAdmin):
     list_display = [
         "user",
         "car",
-        "score",
+        "rating",
         "comment",
-        "created_at"
-        ]
+        "created_at",
+    ]
     search_fields = [
         "user__mail",
     ]
-    list_filter = ["score"]
+    list_filter = ["rating"]
     ordering = ["-created_at"]
     list_per_page = LIST_PER_PAGE
