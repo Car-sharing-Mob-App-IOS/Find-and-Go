@@ -3,6 +3,8 @@ DEFAULT_LENGHT = 100
 USER_RESET_CODE_LEN = 6
 MAX_RESET_ATTEMPTS = 5
 LIST_PER_PAGE = 20
+MIN_NAME_SURNAME_LENGTH = 1
+MAX_NAME_SURNAME_LENGTH = 50
 
 # ПАРАМЕТРЫ ИЗОБРАЖЕНИЯ.
 TARGET_IMAGE_SIZE = (200, 120)
@@ -21,7 +23,9 @@ USER_COORDINATES_LABEL = "Координаты пользователя."
 USER_COORDINATES_HELP_TEXT = "Укажите координаты пользователя."
 USER_VERBOSE_NAME = "Пользователь"
 USER_VERBOSE_NAME_PLURAL = "Пользователи"
-
+USER_ERROR_DELETE_ACCOUNT = "Вы можете удалить только свой аккаунт"
+USER_SUCCESS_DELETE_ACCOUNT = "Пользователь успешно удален"
+USER_ERROR_DELETE = "Ошибка при удалении пользователя"
 
 # Тексты для модели CoordinatesCar
 HELP_TEXT_LATITUDE = "Допустимый диапазон: -90.0 до 90.0"

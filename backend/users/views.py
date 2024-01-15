@@ -1,13 +1,26 @@
-from core.texts import MAX_RESET_ATTEMPTS
-from core.utils import (generate_reset_code, get_attempts_word,
-                        send_confirmation_code)
+from core.texts import (
+    MAX_RESET_ATTEMPTS,
+    USER_ERROR_DELETE_ACCOUNT,
+    USER_SUCCESS_DELETE_ACCOUNT,
+    USER_ERROR_DELETE,
+)
+from core.utils import (
+    generate_reset_code,
+    get_attempts_word,
+    send_confirmation_code,
+)
 from django.db.transaction import atomic
 from django.shortcuts import get_object_or_404
+
 from djoser.permissions import CurrentUserOrAdminOrReadOnly
 from djoser.views import TokenCreateView, TokenDestroyView
 from djoser.views import UserViewSet as DjoserUserViewSet
-from drf_spectacular.utils import (OpenApiExample, extend_schema,
-                                   extend_schema_view)
+
+from drf_spectacular.utils import (
+    OpenApiExample,
+    extend_schema,
+    extend_schema_view,
+)
 from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.exceptions import ValidationError
@@ -16,9 +29,13 @@ from rest_framework.permissions import AllowAny, IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 
 from .models import User, UserCoordinates
-from .serializers import (CoordinatesUserSerializer, ResetCodeSerializer,
-                          SetUserPasswordSerializer, UserSerializer,
-                          UserTokenSerializer)
+from .serializers import (
+    CoordinatesUserSerializer,
+    ResetCodeSerializer,
+    SetUserPasswordSerializer,
+    UserSerializer,
+    UserTokenSerializer,
+)
 
 
 @extend_schema(tags=["Пользователи"])
@@ -47,6 +64,8 @@ class PublicUserViewSet(DjoserUserViewSet):
     permission_classes = [CurrentUserOrAdminOrReadOnly]
 
     def get_serializer_class(self):
+        if self.action == "me":
+            return UserSerializer
         if self.action == "reset_code":
             return ResetCodeSerializer
         if self.action == "set_user_password":
@@ -55,6 +74,31 @@ class PublicUserViewSet(DjoserUserViewSet):
             return CoordinatesUserSerializer
 
         return super().get_serializer_class()
+
+    def destroy(self, request, *args, **kwargs):
+        """Удаление пользователя."""
+
+        instance = self.get_object()
+
+        try:
+            with atomic():
+                if instance != request.user:
+                    return Response(
+                        {"error": USER_ERROR_DELETE_ACCOUNT},
+                        status=status.HTTP_403_FORBIDDEN,
+                    )
+
+                instance.delete()
+
+                return Response(
+                    {"detail": USER_SUCCESS_DELETE_ACCOUNT},
+                    status=status.HTTP_200_OK,
+                )
+        except Exception as e:
+            return Response(
+                {"error": f"{USER_ERROR_DELETE}: {str(e)}"},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            )
 
     @extend_schema(
         description="Сброс пароля пользователя. Введите почту, "
@@ -213,7 +257,7 @@ class PublicUserViewSet(DjoserUserViewSet):
         description="Токен пользователя можно получить только после создания.",
         responses={
             200: UserTokenSerializer,
-        }
+        },
     )
 )
 class CustomTokenCreateView(TokenCreateView):
@@ -225,7 +269,7 @@ class CustomTokenCreateView(TokenCreateView):
 @extend_schema_view(
     post=extend_schema(
         summary="Удаление токена пользователя",
-        description="Токен пользователя можно удалять после его создания."
+        description="Токен пользователя можно удалять после его создания.",
     )
 )
 class CustomTokenDestroyView(TokenDestroyView):

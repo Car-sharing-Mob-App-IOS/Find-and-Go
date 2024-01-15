@@ -23,7 +23,7 @@ class UserSerializer(UserCreateSerializer):
     Сериализатор для модели пользователя .
     """
 
-    coordinates = CoordinatesUserSerializer()
+    coordinates = CoordinatesUserSerializer(required=False, read_only=True)
 
     class Meta:
         model = User
@@ -36,9 +36,7 @@ class UserSerializer(UserCreateSerializer):
             "coordinates",
         ]
 
-        extra_kwargs = {
-            "password": {"write_only": True},
-        }
+        extra_kwargs = {"password": {"required": False}}
 
     def to_representation(self, instance):
         """

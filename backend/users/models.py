@@ -1,11 +1,9 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
-from django.core.validators import EmailValidator
 
 from django.db import models
 
 from core.texts import (
     DEFAULT_LENGHT,
-    USER_EMAIL_VALIDATOR_MESSAGE,
     USER_HELP_TEXT_EMAIL,
     USER_HELP_TEXT_NAME,
     USER_HELP_TEXT_SURNAME,
@@ -60,9 +58,6 @@ class User(AbstractUser):
         USER_HELP_TEXT_EMAIL,
         max_length=DEFAULT_LENGHT,
         unique=True,
-        validators=[
-            EmailValidator(message=USER_EMAIL_VALIDATOR_MESSAGE),
-        ],
         help_text=USER_HELP_TEXT_EMAIL,
     )
 
