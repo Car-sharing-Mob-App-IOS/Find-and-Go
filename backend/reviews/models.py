@@ -40,7 +40,7 @@ class Review(models.Model):
             MaxValueValidator(5.00),
         ],
     )
-    comment = models.TextField(DRIVERS_COMMENT, blank=True)
+    comment = models.CharField(DRIVERS_COMMENT, max_length=200, blank=True)
 
     created_at = models.DateTimeField(
         COMMENT_CREATED_AT,
