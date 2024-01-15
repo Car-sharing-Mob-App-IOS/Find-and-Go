@@ -1,4 +1,4 @@
-from core.texts import MAX_NAME_SURNAME_LENGTH, MIN_LENGTH
+from core.texts import MAX_NAME_SURNAME_LENGTH, MIN_NAME_SURNAME_LENGTH
 from django.core.exceptions import ValidationError
 from django.core.validators import (
     MaxLengthValidator,
@@ -9,7 +9,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 def name_surname_validator(value,
-                           min_length=MIN_LENGTH,
+                           min_length=MIN_NAME_SURNAME_LENGTH,
                            max_length=MAX_NAME_SURNAME_LENGTH
                            ):
     """Валидирует имя и фамилию."""
