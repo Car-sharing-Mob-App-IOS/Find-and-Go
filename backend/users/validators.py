@@ -1,4 +1,3 @@
-from core.texts import MAX_NAME_SURNAME_LENGTH, MIN_NAME_SURNAME_LENGTH
 from django.core.exceptions import ValidationError
 from django.core.validators import (
     MaxLengthValidator,
@@ -7,14 +6,17 @@ from django.core.validators import (
 )
 from django.utils.translation import gettext_lazy as _
 
+from core.texts import MAX_NAME_SURNAME_LENGTH, MIN_NAME_SURNAME_LENGTH
 
-def name_surname_validator(value,
-                           min_length=MIN_NAME_SURNAME_LENGTH,
-                           max_length=MAX_NAME_SURNAME_LENGTH
-                           ):
+
+def name_surname_validator(
+    value,
+    min_length=MIN_NAME_SURNAME_LENGTH,
+    max_length=MAX_NAME_SURNAME_LENGTH,
+):
     """Валидирует имя и фамилию."""
     validator = RegexValidator(
-        regex=r"^[a-zA-Zа-яА-Я\-\–]+$",  # Добавлены тире и дефис
+        regex=r"^[a-zA-Zа-яА-Я\-\–]+$",
         message=("Неверное значение, допускаются только буквы без пробелов."),
     )
     min_length_validator = MinLengthValidator(
@@ -54,7 +56,4 @@ class MaximumLengthValidator(MinLengthValidator):
 
     def get_help_text(self):
         """Возвращает текст справки о максимальной длине пароля."""
-        return _(
-            "Максимальная длина пароля - "
-            f"{self.max_length} символов."
-        )
+        return _("Максимальная длина пароля - " f"{self.max_length} символов.")
