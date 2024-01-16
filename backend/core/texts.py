@@ -5,6 +5,7 @@ MAX_RESET_ATTEMPTS = 5
 LIST_PER_PAGE = 20
 MIN_NAME_SURNAME_LENGTH = 1
 MAX_NAME_SURNAME_LENGTH = 50
+MIN_LENGTH_EMAIL = 7
 
 # ПАРАМЕТРЫ ИЗОБРАЖЕНИЯ.
 TARGET_IMAGE_SIZE = (200, 120)
@@ -19,6 +20,10 @@ USER_RESET_CODE = "Код для сброса пароля"
 USER_RESET_ATTEMPTS = "Счётчик количество попыток сброса пароля."
 
 USER_EMAIL_VALIDATOR_MESSAGE = "Введите корректный адрес электронной почты."
+USER_EMAIL_LENGTH_MESSAGE = (
+    "Адрес электронной почты должен содержать "
+    "не менее 7 символов."
+)
 USER_COORDINATES_LABEL = "Координаты пользователя."
 USER_COORDINATES_HELP_TEXT = "Укажите координаты пользователя."
 USER_VERBOSE_NAME = "Пользователь"
