@@ -1,33 +1,34 @@
-from django.contrib.auth.models import AbstractUser, BaseUserManager
-
-from django.db import models
-
+from cars.models import Coordinates
 from core.texts import (
     DEFAULT_LENGHT,
+    USER_COORDINATES_HELP_TEXT,
+    USER_COORDINATES_LABEL,
     USER_HELP_TEXT_EMAIL,
     USER_HELP_TEXT_NAME,
     USER_HELP_TEXT_SURNAME,
-    USER_VERBOSE_NAME,
-    USER_VERBOSE_NAME_PLURAL,
+    USER_RESET_ATTEMPTS,
     USER_RESET_CODE,
     USER_RESET_CODE_LEN,
-    USER_RESET_ATTEMPTS,
-    USER_COORDINATES_HELP_TEXT,
-    USER_COORDINATES_LABEL,
+    USER_VERBOSE_NAME,
+    USER_VERBOSE_NAME_PLURAL,
 )
-from cars.models import Coordinates
+from django.contrib.auth.models import AbstractUser, BaseUserManager
+from django.db import models
+from users.validators import validate_email_min_length
 
 from .validators import name_surname_validator
 
 
 class CustomUserManager(BaseUserManager):
     """
-    Менеджер модели пользователя,
-    где адрес электронной почты является уникальным идентификатором
+    Менеджер модели пользователя.
+
+    Адрес электронной почты является уникальным идентификатором
     для аутентификации, вместо имен пользователей.
     """
 
     def create_user(self, email, password=None, **extra_fields):
+        """Создает и возвращает пользователя с электронной почтой и паролем."""
         try:
             if not email:
                 raise ValueError("Поле email обязательно к заполнению.")
@@ -42,6 +43,7 @@ class CustomUserManager(BaseUserManager):
             raise ValueError(f"Ошибка при создании пользователя: {e}")
 
     def create_superuser(self, email, password=None, **extra_fields):
+        """Создает и возвращает пользователя с правами суперпользователя."""
         extra_fields.setdefault("is_staff", True)
         extra_fields.setdefault("is_superuser", True)
 
@@ -49,15 +51,16 @@ class CustomUserManager(BaseUserManager):
 
 
 class User(AbstractUser):
-    """
-    Расширенная модель пользователя с дополнительными полями.
-    """
+    """Расширенная модель пользователя с дополнительными полями."""
 
     username = None
     email = models.EmailField(
         USER_HELP_TEXT_EMAIL,
         max_length=DEFAULT_LENGHT,
         unique=True,
+        validators=[
+            validate_email_min_length
+        ],
         help_text=USER_HELP_TEXT_EMAIL,
     )
 
