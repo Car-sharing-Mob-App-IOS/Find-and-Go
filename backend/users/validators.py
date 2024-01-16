@@ -1,9 +1,3 @@
-from core.texts import (
-    MAX_NAME_SURNAME_LENGTH,
-    MIN_LENGTH_EMAIL,
-    MIN_NAME_SURNAME_LENGTH,
-    USER_EMAIL_LENGTH_MESSAGE,
-)
 from django.core.exceptions import ValidationError
 from django.core.validators import (
     MaxLengthValidator,
@@ -12,12 +6,18 @@ from django.core.validators import (
 )
 from django.utils.translation import gettext_lazy as _
 
+from core.texts import (
+    MAX_NAME_SURNAME_LENGTH,
+    MIN_LENGTH_EMAIL,
+    MIN_NAME_SURNAME_LENGTH,
+    USER_EMAIL_LENGTH_MESSAGE,
+)
+
 
 def validate_email_min_length(value, email_min_length=MIN_LENGTH_EMAIL):
     """Валидирует длину email."""
     email_min_length_validator = MinLengthValidator(
-        limit_value=email_min_length,
-        message=USER_EMAIL_LENGTH_MESSAGE
+        limit_value=email_min_length, message=USER_EMAIL_LENGTH_MESSAGE
     )
     email_min_length_validator(value)
 

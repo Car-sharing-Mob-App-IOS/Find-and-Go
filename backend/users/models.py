@@ -1,3 +1,10 @@
+from django.contrib.auth.models import AbstractUser, BaseUserManager
+from django.db import models
+from django.core.validators import EmailValidator
+
+from .validators import name_surname_validator
+
+from users.validators import validate_email_min_length
 from cars.models import Coordinates
 from core.texts import (
     DEFAULT_LENGHT,
@@ -12,11 +19,6 @@ from core.texts import (
     USER_VERBOSE_NAME,
     USER_VERBOSE_NAME_PLURAL,
 )
-from django.contrib.auth.models import AbstractUser, BaseUserManager
-from django.db import models
-from users.validators import validate_email_min_length
-
-from .validators import name_surname_validator
 
 
 class CustomUserManager(BaseUserManager):
@@ -59,7 +61,8 @@ class User(AbstractUser):
         max_length=DEFAULT_LENGHT,
         unique=True,
         validators=[
-            validate_email_min_length
+            EmailValidator,
+            validate_email_min_length,
         ],
         help_text=USER_HELP_TEXT_EMAIL,
     )
