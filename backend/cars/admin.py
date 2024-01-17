@@ -54,7 +54,7 @@ class CarAdmin(admin.ModelAdmin):
                     "various",
                     "type_engine",
                     "power_reserve",
-                    "rating",
+                    # "rating",
                     "coordinates",
                 ),
             },
