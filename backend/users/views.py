@@ -205,7 +205,7 @@ class PublicUserViewSet(DjoserUserViewSet):
         """Метод для обновления координат пользователя."""
 
         user = self.get_object()
-        coordinate_data = request.data.get("coordinates")
+        coordinate_data = request.data
 
         if self.request.user != user:
             return Response(
@@ -218,26 +218,34 @@ class PublicUserViewSet(DjoserUserViewSet):
 
         try:
             with atomic():
-                if coordinate_data:
-                    if user.coordinates is None:
-                        user.coordinates = UserCoordinates.objects.create()
-
-                    serializer = self.get_serializer(
-                        user.coordinates,
-                        data=coordinate_data,
+                if not coordinate_data:
+                    return Response(
+                        {
+                            "message": "Не предоставлены координаты.",
+                            "example": {
+                                "latitude": 90,
+                                "longitude": 180,
+                            },
+                        },
+                        status=status.HTTP_400_BAD_REQUEST,
                     )
 
-                    if serializer.is_valid(raise_exception=True):
-                        serializer.save()
-                        user.coordinates = serializer.instance
-                        user.save()
+                user.coordinates, _ = UserCoordinates.objects.get_or_create(
+                    id=user.id
+                )
 
-                        return Response(
-                            {"success": "Координаты обновлены"},
-                            status=status.HTTP_200_OK,
-                        )
-                    else:
-                        raise ValidationError(serializer.errors)
+                serializer = self.get_serializer(
+                    user.coordinates,
+                    data=coordinate_data,
+                )
+
+                if serializer.is_valid(raise_exception=True):
+                    user.coordinates = serializer.save()
+
+                    return Response(
+                        {"success": "Координаты обновлены"},
+                        status=status.HTTP_200_OK,
+                    )
         except ValidationError as e:
             return Response(
                 {"error": "Ошибка валидации", "details": e.detail},
