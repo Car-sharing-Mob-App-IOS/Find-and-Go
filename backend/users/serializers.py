@@ -16,6 +16,10 @@ class CoordinatesUserSerializer(serializers.ModelSerializer):
             "latitude",
             "longitude",
         )
+        extra_kwargs = {
+            "latitude": {"required": True},
+            "longitude": {"required": True},
+        }
 
 
 class UserSerializer(UserCreateSerializer):
