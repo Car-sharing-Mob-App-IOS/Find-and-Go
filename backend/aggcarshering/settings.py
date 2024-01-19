@@ -1,3 +1,4 @@
+# flake8: noqa
 import os
 from pathlib import Path
 
@@ -116,6 +117,17 @@ else:
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "OPTIONS": {
+            "user_attributes": ['first_name'],
+            "max_similarity": 0.7,  # Максимальная схожесть для first_name
+        },
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "OPTIONS": {
+            "user_attributes": ['last_name'],
+            "max_similarity": 0.5,  # Максимальная схожесть для last_name
+        },
     },
     {
         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
