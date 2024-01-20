@@ -30,6 +30,7 @@ class Review(models.Model):
         Car,
         verbose_name=CAR_TAKEN,
         on_delete=models.CASCADE,
+        related_name='review'
     )
     rating = models.DecimalField(
         CAR_RATING_LABEL,

@@ -105,7 +105,4 @@ class CarSerializer(serializers.ModelSerializer):
 
     def get_rating(self, obj):
         """Расчёт среднего значения рейтинга для машин."""
-
-        rating_avg = Review.objects.filter(car=obj).aggregate(Avg("rating"))
-
-        return rating_avg["rating__avg"] or 0
+        return obj.get_rating()

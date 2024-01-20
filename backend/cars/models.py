@@ -3,6 +3,7 @@ from django.core.validators import (
     MaxValueValidator,
     MinValueValidator,
 )
+from django.db.models import Avg
 
 from core.texts import (
     CAR_VARIOUS_LABEL,
@@ -150,6 +151,10 @@ class Car(models.Model):
 
         if self.image:
             resize_image(self.image.path)
+
+    def get_rating(self):
+        rating_avg = self.review.all().aggregate(Avg("rating"))
+        return rating_avg["rating__avg"] or 0
 
 
 class CarVarious(models.Model):
