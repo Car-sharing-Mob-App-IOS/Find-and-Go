@@ -51,10 +51,6 @@ class Review(models.Model):
     class Meta:
         verbose_name = REVIEW_VERBOSE_NAME
         verbose_name_plural = REVIEW_VERBOSE_NAME_PLURAL
-        unique_together = (
-            "user",
-            "car",
-        )
 
     def __str__(self):
         return (
