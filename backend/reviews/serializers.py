@@ -6,7 +6,7 @@ from .utils import validate_raiting
 
 class ReviewSerializer(serializers.ModelSerializer):
     """Сериализатор для модели Review."""
-
+    created_at = serializers.DateTimeField(format="%d.%m.%Y", read_only=True)  # Задаем формат даты
     rating = serializers.FloatField(validators=[validate_raiting])
 
     class Meta:
@@ -17,6 +17,7 @@ class ReviewSerializer(serializers.ModelSerializer):
             "car",
             "rating",
             "comment",
+            "created_at",
         ]
 
 
