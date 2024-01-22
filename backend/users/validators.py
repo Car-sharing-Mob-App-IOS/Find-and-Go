@@ -1,3 +1,9 @@
+from core.texts import (
+    MAX_NAME_SURNAME_LENGTH,
+    MIN_LENGTH_EMAIL,
+    MIN_NAME_SURNAME_LENGTH,
+    USER_EMAIL_LENGTH_MESSAGE,
+)
 from django.core.exceptions import ValidationError
 from django.core.validators import (
     MaxLengthValidator,
@@ -5,13 +11,6 @@ from django.core.validators import (
     RegexValidator,
 )
 from django.utils.translation import gettext_lazy as _
-
-from core.texts import (
-    MAX_NAME_SURNAME_LENGTH,
-    MIN_LENGTH_EMAIL,
-    MIN_NAME_SURNAME_LENGTH,
-    USER_EMAIL_LENGTH_MESSAGE,
-)
 
 
 def validate_email_min_length(value, email_min_length=MIN_LENGTH_EMAIL):
@@ -70,3 +69,27 @@ class MaximumLengthValidator(MinLengthValidator):
     def get_help_text(self):
         """Возвращает текст справки о максимальной длине пароля."""
         return _("Максимальная длина пароля - " f"{self.max_length} символов.")
+
+
+class NamePasswordSimilarityValidator:
+    """Валидатор схожести имени и фамилии с паролем."""
+
+    def __init__(self, name_field='first_name', surname_field='last_name'):
+        self.name_field = name_field
+        self.surname_field = surname_field
+
+    def validate(self, password, user=None):
+        """Валидация имени и фамилии."""
+        # Получаем имя и фамилию пользователя из объекта пользователя
+        name = getattr(user, self.name_field, '')
+        surname = getattr(user, self.surname_field, '')
+
+        # Проверяем схожесть первых 7 символов имени или фамилии с паролем
+        if (len(name) >= 7 and len(surname) >= 7) and (
+            password.lower().startswith(name[:7].lower())
+            or password.lower().startswith(surname[:7].lower())
+        ):
+            raise ValidationError(
+                _("Пароль слишком похож на имя или фамилию."),
+                code='password_too_similar'
+            )
