@@ -116,17 +116,10 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-        "OPTIONS": {
-            "user_attributes": ['first_name'],
-            "max_similarity": 0.7,  # Максимальная схожесть для first_name
-        },
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-        "OPTIONS": {
-            "user_attributes": ['last_name'],
-            "max_similarity": 0.5,  # Максимальная схожесть для last_name
+        'NAME': 'users.validators.NamePasswordSimilarityValidator',
+        'OPTIONS': {
+            'name_field': 'first_name',  # Имя поля в модели пользователя
+            'surname_field': 'last_name',  # Фамилия поля в модели пользователя
         },
     },
     {
