@@ -85,10 +85,10 @@ class NamePasswordSimilarityValidator:
         surname = getattr(user, self.surname_field, '')
 
         # Проверяем схожесть первых 7 символов имени или фамилии с паролем
-        if (len(name) >= 7 and len(surname) >= 7) and (
-            password.lower().startswith(name[:7].lower())
-            or password.lower().startswith(surname[:7].lower())
-        ):
+        if (len(name) >= 7
+                and password.lower().startswith(name[:7].lower())) or \
+            (len(surname) >= 7
+                and password.lower().startswith(surname[:7].lower())):
             raise ValidationError(
                 _("Пароль слишком похож на имя или фамилию."),
                 code='password_too_similar'
