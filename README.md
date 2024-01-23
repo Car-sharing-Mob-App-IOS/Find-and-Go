@@ -123,7 +123,7 @@
 - **Марат Шайбаков** - [GitHub](https://github.com/smaspb17)
 - **Данил Воронин** - [GitHub](https://github.com/Bogdan-Malina)
 - **Никита Нестеренко** - [GitHub](https://github.com/nikitairl) 
-- **Ольга** - [GitHub](https://github.com/OlgaSHp)  
+- **Ольга Шполянская** - [GitHub](https://github.com/OlgaSHp)  
  
  
 
