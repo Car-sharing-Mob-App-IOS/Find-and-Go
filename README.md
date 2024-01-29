@@ -32,7 +32,12 @@
 - ```POST /auth/o/yandex/:``` Аутентификация через Яндекс.
 - ```POST /auth/o/mail/: ``` Аутентификация через Mail.
 - ```POST /auth/token/login: ``` Аутентификация по токену.
+<details>
+ <summary> <b>Видео превью</b> </summary>
+ 
+https://github.com/VlKazmin/Find-and-Go/assets/121579342/c6a2df51-e711-41e2-a8b8-2dc15155c1b1
 
+</details>
 <details>
  <summary> Технологии </summary>
   
